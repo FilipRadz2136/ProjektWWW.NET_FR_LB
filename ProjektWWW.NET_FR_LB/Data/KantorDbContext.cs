@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using Projekt_FR_ŁB_NET.Models;
+using ProjektWWW.NET_FR_LB.Models;
 
 namespace ProjektWWW.NET_FR_LB.Data
 {
-    public class KantorDbContext : DbContext
+    public class Kantor1DbContext : DbContext
     {
-        public KantorDbContext(DbContextOptions<KantorDbContext> options)
+        public Kantor1DbContext(DbContextOptions<Kantor1DbContext> options)
             : base(options)
         {
         }

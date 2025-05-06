@@ -1,0 +1,42 @@
+﻿@model ProjektWWW.NET_FR_LB.Models.Waluta
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Waluta</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Kod)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Kod)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nazwa)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nazwa)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Symbol)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Symbol)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Kraj)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Kraj)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

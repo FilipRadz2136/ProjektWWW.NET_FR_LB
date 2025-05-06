@@ -11,10 +11,10 @@ namespace ProjektWWW.NET_FR_LB.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly KantorDbContext _context;  // Dodajemy iniekcjê zale¿noœci
+        private readonly Kantor1DbContext _context;  // Dodajemy iniekcjê zale¿noœci
 
         // Konstruktor kontrolera
-        public HomeController(ILogger<HomeController> logger, KantorDbContext context)
+        public HomeController(ILogger<HomeController> logger, Kantor1DbContext context)
         {
             _logger = logger;
             _context = context;  // Przypisujemy _context

@@ -25,8 +25,32 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="Walutas" asp-action="Index">Waluty</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        @if (Context.Session.GetString("Rola") != null)
+                        {
+                            <li class="nav-item">
+                                <span class="nav-link">Witaj, @Context.Session.GetString("Email")!</span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-danger" asp-controller="Konto" asp-action="Wyloguj">Wyloguj</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Konto" asp-action="Login">Zaloguj</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Konto" asp-action="Rejestracja">Rejestracja</a>
+                            </li>
+                        }
                     </ul>
                 </div>
+
             </div>
         </nav>
     </header>

@@ -34,12 +34,40 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/filip/Desktop/ProjektWWW.NET_FR_LB/ProjektWWW.NET_FR_LB/Views/Konto/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29udG9cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/filip/Desktop/ProjektWWW.NET_FR_LB/ProjektWWW.NET_FR_LB/Views/Konto/Rejestracja.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29udG9cUmVqZXN0cmFjamEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/filip/Desktop/ProjektWWW.NET_FR_LB/ProjektWWW.NET_FR_LB/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/filip/Desktop/ProjektWWW.NET_FR_LB/ProjektWWW.NET_FR_LB/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/filip/Desktop/ProjektWWW.NET_FR_LB/ProjektWWW.NET_FR_LB/Views/Walutas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FsdXRhc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/filip/Desktop/ProjektWWW.NET_FR_LB/ProjektWWW.NET_FR_LB/Views/Walutas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FsdXRhc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/filip/Desktop/ProjektWWW.NET_FR_LB/ProjektWWW.NET_FR_LB/Views/Walutas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FsdXRhc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/filip/Desktop/ProjektWWW.NET_FR_LB/ProjektWWW.NET_FR_LB/Views/Walutas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FsdXRhc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/filip/Desktop/ProjektWWW.NET_FR_LB/ProjektWWW.NET_FR_LB/Views/Walutas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2FsdXRhc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/filip/Desktop/ProjektWWW.NET_FR_LB/ProjektWWW.NET_FR_LB/Views/_ViewImports.cshtml]

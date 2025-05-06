@@ -1,0 +1,360 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|c:\\users\\filip\\desktop\\projektwww.net_fr_lb\\projektwww.net_fr_lb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|solutionrelative:projektwww.net_fr_lb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|c:\\users\\filip\\desktop\\projektwww.net_fr_lb\\projektwww.net_fr_lb\\data\\kantordbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|solutionrelative:projektwww.net_fr_lb\\data\\kantordbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|c:\\users\\filip\\desktop\\projektwww.net_fr_lb\\projektwww.net_fr_lb\\models\\akcje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|solutionrelative:projektwww.net_fr_lb\\models\\akcje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|c:\\users\\filip\\desktop\\projektwww.net_fr_lb\\projektwww.net_fr_lb\\models\\alertkursu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|solutionrelative:projektwww.net_fr_lb\\models\\alertkursu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|c:\\users\\filip\\desktop\\projektwww.net_fr_lb\\projektwww.net_fr_lb\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|solutionrelative:projektwww.net_fr_lb\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|c:\\users\\filip\\desktop\\projektwww.net_fr_lb\\projektwww.net_fr_lb\\models\\historiaaktualizacji.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|solutionrelative:projektwww.net_fr_lb\\models\\historiaaktualizacji.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|c:\\users\\filip\\desktop\\projektwww.net_fr_lb\\projektwww.net_fr_lb\\models\\historiawymianuzytkownika.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|solutionrelative:projektwww.net_fr_lb\\models\\historiawymianuzytkownika.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|c:\\users\\filip\\desktop\\projektwww.net_fr_lb\\projektwww.net_fr_lb\\models\\kurswaluty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|solutionrelative:projektwww.net_fr_lb\\models\\kurswaluty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|c:\\users\\filip\\desktop\\projektwww.net_fr_lb\\projektwww.net_fr_lb\\models\\ulubionekursiki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|solutionrelative:projektwww.net_fr_lb\\models\\ulubionekursiki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|c:\\users\\filip\\desktop\\projektwww.net_fr_lb\\projektwww.net_fr_lb\\models\\uzytkownik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|solutionrelative:projektwww.net_fr_lb\\models\\uzytkownik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|c:\\users\\filip\\desktop\\projektwww.net_fr_lb\\projektwww.net_fr_lb\\models\\waluta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|solutionrelative:projektwww.net_fr_lb\\models\\waluta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|c:\\users\\filip\\desktop\\projektwww.net_fr_lb\\projektwww.net_fr_lb\\models\\zrodlokursu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|solutionrelative:projektwww.net_fr_lb\\models\\zrodlokursu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|c:\\users\\filip\\desktop\\projektwww.net_fr_lb\\projektwww.net_fr_lb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|solutionrelative:projektwww.net_fr_lb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|c:\\users\\filip\\desktop\\projektwww.net_fr_lb\\projektwww.net_fr_lb\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|solutionrelative:projektwww.net_fr_lb\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|c:\\users\\filip\\desktop\\projektwww.net_fr_lb\\projektwww.net_fr_lb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|solutionrelative:projektwww.net_fr_lb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|c:\\users\\filip\\desktop\\projektwww.net_fr_lb\\projektwww.net_fr_lb\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|solutionrelative:projektwww.net_fr_lb\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|c:\\users\\filip\\desktop\\projektwww.net_fr_lb\\projektwww.net_fr_lb\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|solutionrelative:projektwww.net_fr_lb\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|c:\\users\\filip\\desktop\\projektwww.net_fr_lb\\projektwww.net_fr_lb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|solutionrelative:projektwww.net_fr_lb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|c:\\users\\filip\\desktop\\projektwww.net_fr_lb\\projektwww.net_fr_lb\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|solutionrelative:projektwww.net_fr_lb\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|c:\\users\\filip\\desktop\\projektwww.net_fr_lb\\projektwww.net_fr_lb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|solutionrelative:projektwww.net_fr_lb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "KursWaluty.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Models\\KursWaluty.cs",
+              "RelativeDocumentMoniker": "ProjektWWW.NET_FR_LB\\Models\\KursWaluty.cs",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Models\\KursWaluty.cs",
+              "RelativeToolTip": "ProjektWWW.NET_FR_LB\\Models\\KursWaluty.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T19:44:15.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HistoriaWymianUzytkownika.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Models\\HistoriaWymianUzytkownika.cs",
+              "RelativeDocumentMoniker": "ProjektWWW.NET_FR_LB\\Models\\HistoriaWymianUzytkownika.cs",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Models\\HistoriaWymianUzytkownika.cs",
+              "RelativeToolTip": "ProjektWWW.NET_FR_LB\\Models\\HistoriaWymianUzytkownika.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T19:43:49.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HistoriaAktualizacji.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Models\\HistoriaAktualizacji.cs",
+              "RelativeDocumentMoniker": "ProjektWWW.NET_FR_LB\\Models\\HistoriaAktualizacji.cs",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Models\\HistoriaAktualizacji.cs",
+              "RelativeToolTip": "ProjektWWW.NET_FR_LB\\Models\\HistoriaAktualizacji.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T19:43:15.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "ProjektWWW.NET_FR_LB\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "ProjektWWW.NET_FR_LB\\Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T19:39:08.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AlertKursu.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Models\\AlertKursu.cs",
+              "RelativeDocumentMoniker": "ProjektWWW.NET_FR_LB\\Models\\AlertKursu.cs",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Models\\AlertKursu.cs",
+              "RelativeToolTip": "ProjektWWW.NET_FR_LB\\Models\\AlertKursu.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T19:42:42.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Akcje.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Models\\Akcje.cs",
+              "RelativeDocumentMoniker": "ProjektWWW.NET_FR_LB\\Models\\Akcje.cs",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Models\\Akcje.cs",
+              "RelativeToolTip": "ProjektWWW.NET_FR_LB\\Models\\Akcje.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T19:41:57.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "KantorDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Data\\KantorDbContext.cs",
+              "RelativeDocumentMoniker": "ProjektWWW.NET_FR_LB\\Data\\KantorDbContext.cs",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Data\\KantorDbContext.cs",
+              "RelativeToolTip": "ProjektWWW.NET_FR_LB\\Data\\KantorDbContext.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAUwAgAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T19:40:03.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ProjektWWW.NET_FR_LB\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ProjektWWW.NET_FR_LB\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T19:38:55.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UlubioneKursiki.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Models\\UlubioneKursiki.cs",
+              "RelativeDocumentMoniker": "ProjektWWW.NET_FR_LB\\Models\\UlubioneKursiki.cs",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Models\\UlubioneKursiki.cs",
+              "RelativeToolTip": "ProjektWWW.NET_FR_LB\\Models\\UlubioneKursiki.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T19:44:48.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Uzytkownik.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Models\\Uzytkownik.cs",
+              "RelativeDocumentMoniker": "ProjektWWW.NET_FR_LB\\Models\\Uzytkownik.cs",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Models\\Uzytkownik.cs",
+              "RelativeToolTip": "ProjektWWW.NET_FR_LB\\Models\\Uzytkownik.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T19:45:16.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Waluta.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Models\\Waluta.cs",
+              "RelativeDocumentMoniker": "ProjektWWW.NET_FR_LB\\Models\\Waluta.cs",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Models\\Waluta.cs",
+              "RelativeToolTip": "ProjektWWW.NET_FR_LB\\Models\\Waluta.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T19:46:26.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ZrodloKursu.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Models\\ZrodloKursu.cs",
+              "RelativeDocumentMoniker": "ProjektWWW.NET_FR_LB\\Models\\ZrodloKursu.cs",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Models\\ZrodloKursu.cs",
+              "RelativeToolTip": "ProjektWWW.NET_FR_LB\\Models\\ZrodloKursu.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T19:46:47.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ProjektWWW.NET_FR_LB\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ProjektWWW.NET_FR_LB\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-06T19:47:44.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "ProjektWWW.NET_FR_LB\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "ProjektWWW.NET_FR_LB\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-06T19:58:06.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ProjektWWW.NET_FR_LB\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ProjektWWW.NET_FR_LB\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-06T19:58:05.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "ProjektWWW.NET_FR_LB\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "ProjektWWW.NET_FR_LB\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-06T19:57:58.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\appsettings.json",
+              "RelativeDocumentMoniker": "ProjektWWW.NET_FR_LB\\appsettings.json",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\appsettings.json",
+              "RelativeToolTip": "ProjektWWW.NET_FR_LB\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-06T19:48:07.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "ProjektWWW.NET_FR_LB\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\appsettings.Development.json",
+              "RelativeToolTip": "ProjektWWW.NET_FR_LB\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-06T19:57:54.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Program.cs",
+              "RelativeDocumentMoniker": "ProjektWWW.NET_FR_LB\\Program.cs",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Program.cs",
+              "RelativeToolTip": "ProjektWWW.NET_FR_LB\\Program.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAIwAEAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T19:48:17.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "ProjektWWW.NET_FR_LB\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "ProjektWWW.NET_FR_LB\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-06T19:47:12.963Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

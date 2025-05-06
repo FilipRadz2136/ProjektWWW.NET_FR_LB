@@ -1,0 +1,43 @@
+﻿@model IEnumerable<ProjektWWW.NET_FR_LB.Models.Waluta>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<h2>Lista walut</h2>
+
+@if (Model != null && Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Flaga</th>
+                <th>Kod</th>
+                <th>Nazwa</th>
+                <th>Symbol</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var waluta in Model)
+            {
+                <tr>
+                    <td>
+                        <img src="~/@waluta.Kraj" alt="Flaga" width="50" />
+                    </td>
+                    <td>@waluta.Kod</td>
+                    <td>@waluta.Nazwa</td>
+                    <td>@waluta.Symbol</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Brak walut w bazie danych.</p>
+}

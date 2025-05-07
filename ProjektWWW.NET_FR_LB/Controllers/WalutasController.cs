@@ -11,8 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 
 
 namespace ProjektWWW.NET_FR_LB.Controllers
-{
-    [Authorize(Roles = "Admin")]
+{ 
     public class WalutasController : Controller
     {
         private readonly Kantor1DbContext _context;

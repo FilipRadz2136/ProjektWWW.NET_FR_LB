@@ -4,45 +4,83 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+<!--karuzela na samej górze-->
+<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url('/images/kantor1.jpeg'); background-size: cover; min-height: 400px;">
+            <div class="container text-center py-5">
+                <h1 class="display-4">Nie jesteś naszym Klientem?</h1>
+                <p class="lead">Wymień walutę bez rejestracji</p>
+                <a href="#" class="btn btn-success">Sprawdź</a>
+            </div>
+        </div>
+
+        <div class="carousel-item" style="background-image: url('/images/slide2.jpeg'); background-size: cover; min-height: 400px;">
+            <div class="container text-center py-5">
+                <h1 class="display-4">Bezpieczna wymiana walut</h1>
+                <p class="lead">Zarejestruj się i korzystaj z naszych usług</p>
+                <a href="#" class="btn btn-light">Zarejestruj się</a>
+            </div>
+        </div>
+
+        <div class="carousel-item" style="background-image: url('/images/kantor2.jpg'); background-size: cover; min-height: 400px;">
+            <div class="container text-center py-5">
+                <h1 class="display-4">Najlepsze kursy walut</h1>
+                <p class="lead">Zobacz nasze aktualne oferty</p>
+                <a href="#" class="btn btn-primary">Zobacz kursy</a>
+            </div>
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
 </div>
 
 
-<p>
-    <a class="btn btn-success" asp-controller="Walutas" asp-action="Index">Zarządzaj walutami</a>
-</p>
-
-<h2>Lista walut</h2>
-
-@if (Model != null && Model.Any())
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Flaga</th>
-                <th>Kod</th>
-                <th>Nazwa</th>
-                <th>Symbol</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var waluta in Model)
-            {
-                <tr>
-                    <td>
-                        <img src="~/@waluta.Kraj" alt="Flaga" width="50" />
-                    </td>
-                    <td>@waluta.Kod</td>
-                    <td>@waluta.Nazwa</td>
-                    <td>@waluta.Symbol</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-}
-else
-{
-    <p>Brak walut w bazie danych.</p>
-}
+<!--bootstrap-->
+<div class="container my-5">
+    <h2 class="text-center mb-4">Nasz kantor internetowy w liczbach:</h2>
+    <div class="row text-center">
+        <div class="col-md-4 mb-4">
+            <div class="p-4 bg-white shadow rounded-3">
+                <h1 class="text-primary">2</h1>
+                <h5 class="fw-bold">Dziugasy</h5>
+                <hr style="width: 50px; margin: auto;" />
+                <p class="mt-3">
+                    Zaczynają robić projekt i nie wiedzą co tu można wstawić więc piszą od rzeczy (kiedys cos tu bedzie)
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="p-4 bg-white shadow rounded-3">
+                <h1 class="text-primary">7</h1>
+                <h5 class="fw-bold">Semestrów</h5>
+                <hr style="width: 50px; margin: auto;" />
+                <p class="mt-3">
+                    Studiujemy na Politechnice Białostockiej. Zostały jeszcze 3 semestry do końca :)
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="p-4 bg-white shadow rounded-3">
+                <h1 class="text-primary">175</h1>
+                <h5 class="fw-bold">IQ</h5>
+                <hr style="width: 50px; margin: auto;" />
+                <p class="mt-3">
+                    Taki średni iloraz inteligencji posiada każdy z członków projektu
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

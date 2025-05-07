@@ -77,6 +77,18 @@
       "PackagePath": "staticwebassets\\images\\flagi\\us.png"
     },
     {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\images\\kantor1.jpeg",
+      "PackagePath": "staticwebassets\\images\\kantor1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\images\\kantor2.jpg",
+      "PackagePath": "staticwebassets\\images\\kantor2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\images\\slide2.jpeg",
+      "PackagePath": "staticwebassets\\images\\slide2.jpeg"
+    },
+    {
       "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

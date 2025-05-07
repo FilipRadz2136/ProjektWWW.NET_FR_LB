@@ -20,5 +20,8 @@ namespace ProjektWWW.NET_FR_LB.Data
         public DbSet<AlertKursu> AlertyKursow { get; set; }
         public DbSet<Akcje> Akcje { get; set; }
         public DbSet<HistoriaAktualizacji> HistorieAktualizacji { get; set; }
+        public DbSet<Rola> Rola { get; set; }
+        public DbSet<UzytkownikRola> UzytkownikRola { get; set; }
+
     }
 }

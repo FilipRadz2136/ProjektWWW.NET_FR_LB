@@ -7,6 +7,7 @@
         public string HasloHash { get; set; }
         public DateTime DataRejestracji { get; set; }
 
-        public string Rola { get; set; } //admin albo zwyklak
+        public ICollection<UzytkownikRola> UzytkownikRolas { get; set; }
     }
 }
+    

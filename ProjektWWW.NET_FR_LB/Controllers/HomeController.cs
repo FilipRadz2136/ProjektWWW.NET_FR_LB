@@ -4,29 +4,26 @@ using ProjektWWW.NET_FR_LB.Data;
 using ProjektWWW.NET_FR_LB.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
-using ProjektWWW.NET_FR_LB.Models;
 
 namespace ProjektWWW.NET_FR_LB.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly Kantor1DbContext _context;  // Dodajemy iniekcjê zale¿noœci
+        private readonly Kantor1DbContext _context;
 
         // Konstruktor kontrolera
         public HomeController(ILogger<HomeController> logger, Kantor1DbContext context)
         {
             _logger = logger;
-            _context = context;  // Przypisujemy _context
+            _context = context;
         }
 
-        // Metoda Index pobiera dane z bazy
         public async Task<IActionResult> Index()
         {
-            // Pobierz wszystkie waluty z bazy danych
+            //pobieramy wszystkie waluty z bazy danych
             var waluty = await _context.Waluty.ToListAsync();
 
-            // Przeka¿ dane do widoku
             return View(waluty);
         }
 

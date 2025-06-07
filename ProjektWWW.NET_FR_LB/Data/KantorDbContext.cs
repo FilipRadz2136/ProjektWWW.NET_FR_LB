@@ -21,7 +21,27 @@ namespace ProjektWWW.NET_FR_LB.Data
         public DbSet<Akcje> Akcje { get; set; }
         public DbSet<HistoriaAktualizacji> HistorieAktualizacji { get; set; }
         public DbSet<Rola> Rola { get; set; }
-        public DbSet<UzytkownikRola> UzytkownikRola { get; set; }
 
+        public DbSet<UzytkownikRola> UzytkownikRole { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            {
+                base.OnModelCreating(modelBuilder);
+
+                modelBuilder.Entity<UzytkownikRola>()
+                    .HasKey(ur => new { ur.UzytkownikId, ur.RolaId });
+
+                modelBuilder.Entity<UzytkownikRola>()
+                    .HasOne(ur => ur.Uzytkownik)
+                    .WithMany(u => u.UzytkownikRole)
+                    .HasForeignKey(ur => ur.UzytkownikId);
+
+                modelBuilder.Entity<UzytkownikRola>()
+                    .HasOne(ur => ur.Rola)
+                    .WithMany(r => r.UzytkownikRole)
+                    .HasForeignKey(ur => ur.RolaId);
+            }
+        }
     }
 }

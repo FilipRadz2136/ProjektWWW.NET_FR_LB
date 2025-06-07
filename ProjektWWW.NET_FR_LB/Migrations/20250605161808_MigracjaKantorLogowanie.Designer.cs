@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProjektWWW.NET_FR_LB.Data;
 
@@ -11,9 +12,11 @@ using ProjektWWW.NET_FR_LB.Data;
 namespace ProjektWWW.NET_FR_LB.Migrations
 {
     [DbContext(typeof(Kantor1DbContext))]
-    partial class Kantor1DbContextModelSnapshot : ModelSnapshot
+    [Migration("20250605161808_MigracjaKantorLogowanie")]
+    partial class MigracjaKantorLogowanie
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -258,21 +261,6 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                     b.ToTable("Uzytkownicy");
                 });
 
-            modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.UzytkownikRola", b =>
-                {
-                    b.Property<int>("UzytkownikId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("RolaId")
-                        .HasColumnType("int");
-
-                    b.HasKey("UzytkownikId", "RolaId");
-
-                    b.HasIndex("RolaId");
-
-                    b.ToTable("UzytkownikRole");
-                });
-
             modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.Waluta", b =>
                 {
                     b.Property<int>("Id")
@@ -449,35 +437,6 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                     b.Navigation("WalutaDo");
 
                     b.Navigation("WalutaZ");
-                });
-
-            modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.UzytkownikRola", b =>
-                {
-                    b.HasOne("ProjektWWW.NET_FR_LB.Models.Rola", "Rola")
-                        .WithMany("UzytkownikRole")
-                        .HasForeignKey("RolaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("ProjektWWW.NET_FR_LB.Models.Uzytkownik", "Uzytkownik")
-                        .WithMany("UzytkownikRole")
-                        .HasForeignKey("UzytkownikId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Rola");
-
-                    b.Navigation("Uzytkownik");
-                });
-
-            modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.Rola", b =>
-                {
-                    b.Navigation("UzytkownikRole");
-                });
-
-            modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.Uzytkownik", b =>
-                {
-                    b.Navigation("UzytkownikRole");
                 });
 #pragma warning restore 612, 618
         }

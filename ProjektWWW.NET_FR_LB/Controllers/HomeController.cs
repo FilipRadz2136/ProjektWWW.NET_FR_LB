@@ -1,8 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using ProjektWWW.NET_FR_LB.Data;
 using ProjektWWW.NET_FR_LB.Models;
-using Microsoft.EntityFrameworkCore;
+using ProjektWWW.NET_FR_LB.Repositories;
+using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
 
 namespace ProjektWWW.NET_FR_LB.Controllers
@@ -10,20 +10,17 @@ namespace ProjektWWW.NET_FR_LB.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly Kantor1DbContext _context;
+        private readonly IWalutaRepository _walutaRepository;
 
-        // Konstruktor kontrolera
-        public HomeController(ILogger<HomeController> logger, Kantor1DbContext context)
+        public HomeController(ILogger<HomeController> logger, IWalutaRepository walutaRepository)
         {
             _logger = logger;
-            _context = context;
+            _walutaRepository = walutaRepository;
         }
 
         public async Task<IActionResult> Index()
         {
-            //pobieramy wszystkie waluty z bazy danych
-            var waluty = await _context.Waluty.ToListAsync();
-
+            var waluty = await _walutaRepository.GetAllAsync();
             return View(waluty);
         }
 

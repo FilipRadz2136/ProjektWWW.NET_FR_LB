@@ -36,13 +36,40 @@ namespace ProjektWWW.NET_FR_LB.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Kod,Nazwa,Symbol,Kraj")] Waluta waluta)
+        public async Task<IActionResult> Create(Waluta waluta, IFormFile flaga)
         {
-            if (!ModelState.IsValid) return View(waluta);
+            if (waluta.Kraj == null && flaga == null)
+            {
+                ModelState.AddModelError("Kraj", "Proszę przesłać plik graficzny.");
+            }
+            else
+            {
+                ModelState.Remove("Kraj");
+            }
+
+            if (!ModelState.IsValid)
+                return View(waluta);
+
+            if (flaga != null && flaga.Length > 0)
+            {
+                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads");
+                Directory.CreateDirectory(uploadsFolder);
+
+                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(flaga.FileName);
+                var filePath = Path.Combine(uploadsFolder, fileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await flaga.CopyToAsync(stream);
+                }
+
+                waluta.Kraj = "/uploads/" + fileName;
+            }
 
             await _repo.AddAsync(waluta);
             return RedirectToAction(nameof(Index));
         }
+
 
         public async Task<IActionResult> Edit(int? id)
         {
@@ -56,31 +83,38 @@ namespace ProjektWWW.NET_FR_LB.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Kod,Nazwa,Symbol,Kraj")] Waluta waluta)
+        public async Task<IActionResult> Edit(int id, Waluta waluta, IFormFile flaga)
         {
             if (id != waluta.Id) return NotFound();
+
+            var existing = await _repo.GetByIdAsync(id);
+            if (existing == null) return NotFound();
+
             if (!ModelState.IsValid) return View(waluta);
+
+            if (flaga != null && flaga.Length > 0)
+            {
+                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads");
+                Directory.CreateDirectory(uploadsFolder);
+
+                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(flaga.FileName);
+                var filePath = Path.Combine(uploadsFolder, fileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await flaga.CopyToAsync(stream);
+                }
+
+                waluta.Kraj = "/uploads/" + fileName;
+            }
+            else
+            {
+                waluta.Kraj = existing.Kraj; // zachowaj starą flagę
+            }
 
             await _repo.UpdateAsync(waluta);
             return RedirectToAction(nameof(Index));
         }
 
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null) return NotFound();
-
-            var waluta = await _repo.GetByIdAsync(id.Value);
-            if (waluta == null) return NotFound();
-
-            return View(waluta);
-        }
-
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            await _repo.DeleteAsync(id);
-            return RedirectToAction(nameof(Index));
-        }
     }
 }

@@ -13,70 +13,6 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\images\\flagi\\bg.png",
-      "PackagePath": "staticwebassets\\images\\flagi\\bg.png"
-    },
-    {
-      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\images\\flagi\\ca.png",
-      "PackagePath": "staticwebassets\\images\\flagi\\ca.png"
-    },
-    {
-      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\images\\flagi\\ch.png",
-      "PackagePath": "staticwebassets\\images\\flagi\\ch.png"
-    },
-    {
-      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\images\\flagi\\cn.png",
-      "PackagePath": "staticwebassets\\images\\flagi\\cn.png"
-    },
-    {
-      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\images\\flagi\\eu.png",
-      "PackagePath": "staticwebassets\\images\\flagi\\eu.png"
-    },
-    {
-      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\images\\flagi\\gb.png",
-      "PackagePath": "staticwebassets\\images\\flagi\\gb.png"
-    },
-    {
-      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\images\\flagi\\hu.png",
-      "PackagePath": "staticwebassets\\images\\flagi\\hu.png"
-    },
-    {
-      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\images\\flagi\\in.png",
-      "PackagePath": "staticwebassets\\images\\flagi\\in.png"
-    },
-    {
-      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\images\\flagi\\jp.png",
-      "PackagePath": "staticwebassets\\images\\flagi\\jp.png"
-    },
-    {
-      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\images\\flagi\\kr.png",
-      "PackagePath": "staticwebassets\\images\\flagi\\kr.png"
-    },
-    {
-      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\images\\flagi\\pl.png",
-      "PackagePath": "staticwebassets\\images\\flagi\\pl.png"
-    },
-    {
-      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\images\\flagi\\ru.png",
-      "PackagePath": "staticwebassets\\images\\flagi\\ru.png"
-    },
-    {
-      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\images\\flagi\\se.png",
-      "PackagePath": "staticwebassets\\images\\flagi\\se.png"
-    },
-    {
-      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\images\\flagi\\tr.png",
-      "PackagePath": "staticwebassets\\images\\flagi\\tr.png"
-    },
-    {
-      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\images\\flagi\\ua.png",
-      "PackagePath": "staticwebassets\\images\\flagi\\ua.png"
-    },
-    {
-      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\images\\flagi\\us.png",
-      "PackagePath": "staticwebassets\\images\\flagi\\us.png"
-    },
-    {
       "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\images\\kantor1.jpeg",
       "PackagePath": "staticwebassets\\images\\kantor1.jpeg"
     },
@@ -319,6 +255,94 @@
     {
       "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\1935adc0-aad5-4939-97ed-b64e73d5035e - kopiować (2).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\1935adc0-aad5-4939-97ed-b64e73d5035e - kopiować (2).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\1935adc0-aad5-4939-97ed-b64e73d5035e - kopiować.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\1935adc0-aad5-4939-97ed-b64e73d5035e - kopiować.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\1935adc0-aad5-4939-97ed-b64e73d5035e.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\1935adc0-aad5-4939-97ed-b64e73d5035e.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\2004af4d-d4d2-4668-87a2-3662d351f25c.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\2004af4d-d4d2-4668-87a2-3662d351f25c.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\4c96f811-7bf7-47e0-8bff-38e9696b54fc.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\4c96f811-7bf7-47e0-8bff-38e9696b54fc.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\bg.png",
+      "PackagePath": "staticwebassets\\uploads\\bg.png"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\ca.png",
+      "PackagePath": "staticwebassets\\uploads\\ca.png"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\ch.png",
+      "PackagePath": "staticwebassets\\uploads\\ch.png"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\cn.png",
+      "PackagePath": "staticwebassets\\uploads\\cn.png"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\eu.png",
+      "PackagePath": "staticwebassets\\uploads\\eu.png"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\gb.png",
+      "PackagePath": "staticwebassets\\uploads\\gb.png"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\hu.png",
+      "PackagePath": "staticwebassets\\uploads\\hu.png"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\in.png",
+      "PackagePath": "staticwebassets\\uploads\\in.png"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\jp.png",
+      "PackagePath": "staticwebassets\\uploads\\jp.png"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\kr.png",
+      "PackagePath": "staticwebassets\\uploads\\kr.png"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\pl.png",
+      "PackagePath": "staticwebassets\\uploads\\pl.png"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\pobierz.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\pobierz.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\ru.png",
+      "PackagePath": "staticwebassets\\uploads\\ru.png"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\se.png",
+      "PackagePath": "staticwebassets\\uploads\\se.png"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\tr.png",
+      "PackagePath": "staticwebassets\\uploads\\tr.png"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\ua.png",
+      "PackagePath": "staticwebassets\\uploads\\ua.png"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\us.png",
+      "PackagePath": "staticwebassets\\uploads\\us.png"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ProjektWWW.NET_FR_LB.Microsoft.AspNetCore.StaticWebAssets.props",

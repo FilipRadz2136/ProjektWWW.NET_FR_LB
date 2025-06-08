@@ -1,79 +1,70 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
-
-@using Microsoft.AspNetCore.Identity
-@inject IHttpContextAccessor HttpContextAccessor
-
-<ul class="navbar-nav ml-auto">
-    @if (HttpContextAccessor.HttpContext.User.Identity.IsAuthenticated)
-    {
-        <li class="nav-item">
-            <span class="nav-link">Witaj, @User.Identity.Name!</span>
-        </li>
-        <li class="nav-item">
-            <form asp-controller="Konto" asp-action="Logout" method="post" class="form-inline">
-                <button type="submit" class="btn btn-link nav-link">Wyloguj</button>
-            </form>
-        </li>
-    }
-    else
-    {
-        <li class="nav-item">
-            <a class="nav-link" asp-controller="Konto" asp-action="Login">Zaloguj</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" asp-controller="Konto" asp-action="Register">Zarejestruj</a>
-        </li>
-    }
-</ul>
+<html lang="pl">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - ProjektWWW.NET_FR_LB</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <title>@ViewData["Title"] - Kantor</title>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/ProjektWWW.NET_FR_LB.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ProjektWWW.NET_FR_LB</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index">Kantor</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">Strona główna</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-controller="Walutas" asp-action="Index">Waluty</a>
+                            <a class="nav-link" asp-controller="Walutas" asp-action="Index">Waluty</a>
                         </li>
                     </ul>
+                    <ul class="navbar-nav">
+                        @if (User.Identity?.IsAuthenticated ?? false)
+                        {
+                            <li class="nav-item">
+                                <span class="navbar-text text-light me-2">Witaj, @User.Identity.Name</span>
+                            </li>
+                            <li class="nav-item">
+                                <form asp-controller="Konto" asp-action="Logout" method="post" class="d-inline">
+                                    <button type="submit" class="btn btn-outline-light btn-sm">Wyloguj</button>
+                                </form>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Konto" asp-action="Login">Logowanie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Konto" asp-action="Register">Rejestracja</a>
+                            </li>
+                        }
+                    </ul>
                 </div>
-
             </div>
         </nav>
     </header>
-    <div class="container">
+
+    <div class="container mt-4">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="bg-dark text-light text-center py-3 mt-4">
         <div class="container">
-            &copy; 2025 - ProjektWWW.NET_FR_LB - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <p>&copy; 2025 - Projekt Kantor - <a asp-area="" asp-controller="Home" asp-action="Privacy" class="text-light">Prywatność</a></p>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

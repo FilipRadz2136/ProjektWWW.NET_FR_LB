@@ -40,7 +40,10 @@
                 @Html.DisplayFor(modelItem => item.Symbol)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Kraj)
+                @if (!string.IsNullOrEmpty(item.Kraj))
+                {
+                    <img src="@item.Kraj" alt="flaga" style="width: 40px;" />
+                }
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

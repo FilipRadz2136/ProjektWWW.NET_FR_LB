@@ -2,10 +2,10 @@
 using Microsoft.EntityFrameworkCore;
 using ProjektWWW.NET_FR_LB.Data;
 using ProjektWWW.NET_FR_LB.Models;
+using ProjektWWW.NET_FR_LB.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Rejestracja usług
 builder.Services.AddDbContext<Kantor1DbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
@@ -15,9 +15,11 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.LoginPath = "/Konto/Login";
         options.AccessDeniedPath = "/Konto/Login";
     });
+
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddControllersWithViews();
 builder.Services.AddSession();
+builder.Services.AddScoped<IWalutaRepository, WalutaRepository>();
 
 var app = builder.Build();
 
@@ -36,12 +38,8 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.UseSession();
 
-// Konfiguracja trasowania
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-
-
-    app.Run();
-}
+app.Run();

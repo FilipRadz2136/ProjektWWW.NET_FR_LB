@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Aktualny Kurs";
+}
+
+<h2>Aktualny Kurs Waluty</h2>
+
+<form asp-action="AktualnyKurs" method="get">
+    <div class="form-group">
+        <label for="from">Z waluty:</label>
+        <input type="text" class="form-control" id="from" name="from" value="@ViewBag.From" />
+    </div>
+    <div class="form-group">
+        <label for="to">Na walutę:</label>
+        <input type="text" class="form-control" id="to" name="to" value="@ViewBag.To" />
+    </div>
+    <button type="submit" class="btn btn-primary mt-2">Pobierz kurs</button>
+</form>
+
+<div class="mt-4">
+    <h5>Wynik:</h5>
+    @if (ViewBag.Kurs != null)
+    {
+        <p class="text-success"><strong>@ViewBag.Kurs</strong></p>
+    }
+    else if (ViewBag.Blad != null)
+    {
+        <p class="text-danger">@ViewBag.Blad</p>
+    }
+</div>

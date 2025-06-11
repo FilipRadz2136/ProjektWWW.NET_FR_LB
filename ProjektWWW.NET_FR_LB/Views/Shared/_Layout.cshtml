@@ -50,7 +50,12 @@
             </div>
         </nav>
     </header>
-
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-controller="Kursy" asp-action="AktualnyKurs">Kalkulator walut</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-controller="Komentarze" asp-action="Index">Komentarze</a>
+    </li>
     <div class="container mt-4">
         <main role="main" class="pb-3">
             @RenderBody()

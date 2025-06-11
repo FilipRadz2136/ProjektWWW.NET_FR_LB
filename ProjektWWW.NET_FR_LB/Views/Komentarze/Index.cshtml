@@ -1,0 +1,32 @@
+﻿@model IEnumerable<ProjektWWW.NET_FR_LB.Models.Komentarz>
+
+@{
+    ViewData["Title"] = "Komentarze";
+}
+
+<h2>Komentarze</h2>
+
+@if (User.Identity.IsAuthenticated)
+{
+    <p><a asp-action="Dodaj" class="btn btn-success">Dodaj komentarz</a></p>
+}
+
+@if (Model != null && Model.Any())
+{
+    <ul class="list-group">
+        @foreach (var komentarz in Model)
+        {
+            <li class="list-group-item">
+                <strong>@komentarz.Uzytkownik.Email</strong> napisał:
+                <br />
+                @komentarz.Tresc
+                <br />
+                <small class="text-muted">@komentarz.DataDodania.ToString("g")</small>
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>Brak komentarzy.</p>
+}

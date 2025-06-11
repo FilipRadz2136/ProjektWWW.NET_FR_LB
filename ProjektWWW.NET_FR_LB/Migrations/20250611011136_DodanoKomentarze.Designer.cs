@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProjektWWW.NET_FR_LB.Data;
 
@@ -11,9 +12,11 @@ using ProjektWWW.NET_FR_LB.Data;
 namespace ProjektWWW.NET_FR_LB.Migrations
 {
     [DbContext(typeof(Kantor1DbContext))]
-    partial class Kantor1DbContextModelSnapshot : ModelSnapshot
+    [Migration("20250611011136_DodanoKomentarze")]
+    partial class DodanoKomentarze
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

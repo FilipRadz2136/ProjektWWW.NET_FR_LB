@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProjektWWW.NET_FR_LB.Data;
 
@@ -11,9 +12,11 @@ using ProjektWWW.NET_FR_LB.Data;
 namespace ProjektWWW.NET_FR_LB.Migrations
 {
     [DbContext(typeof(Kantor1DbContext))]
-    partial class Kantor1DbContextModelSnapshot : ModelSnapshot
+    [Migration("20250610155331_MigracjaNowa")]
+    partial class MigracjaNowa
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -126,31 +129,6 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                     b.HasIndex("WalutaZId");
 
                     b.ToTable("HistoriaWymianUzytkownika");
-                });
-
-            modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.Komentarz", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("DataDodania")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Tresc")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("UzytkownikId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UzytkownikId");
-
-                    b.ToTable("Komentarze");
                 });
 
             modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.Rola", b =>
@@ -267,168 +245,6 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Waluty");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 100,
-                            Kod = "USD",
-                            Kraj = "🇺🇸",
-                            Nazwa = "Dolar amerykański",
-                            Symbol = "$"
-                        },
-                        new
-                        {
-                            Id = 101,
-                            Kod = "EUR",
-                            Kraj = "🇪🇺",
-                            Nazwa = "Euro",
-                            Symbol = "€"
-                        },
-                        new
-                        {
-                            Id = 102,
-                            Kod = "GBP",
-                            Kraj = "🇬🇧",
-                            Nazwa = "Funt brytyjski",
-                            Symbol = "£"
-                        },
-                        new
-                        {
-                            Id = 103,
-                            Kod = "PLN",
-                            Kraj = "🇵🇱",
-                            Nazwa = "Złoty polski",
-                            Symbol = "zł"
-                        },
-                        new
-                        {
-                            Id = 104,
-                            Kod = "JPY",
-                            Kraj = "🇯🇵",
-                            Nazwa = "Jen japoński",
-                            Symbol = "¥"
-                        },
-                        new
-                        {
-                            Id = 105,
-                            Kod = "CHF",
-                            Kraj = "🇨🇭",
-                            Nazwa = "Frank szwajcarski",
-                            Symbol = "CHF"
-                        },
-                        new
-                        {
-                            Id = 106,
-                            Kod = "AUD",
-                            Kraj = "🇦🇺",
-                            Nazwa = "Dolar australijski",
-                            Symbol = "A$"
-                        },
-                        new
-                        {
-                            Id = 107,
-                            Kod = "CAD",
-                            Kraj = "🇨🇦",
-                            Nazwa = "Dolar kanadyjski",
-                            Symbol = "C$"
-                        },
-                        new
-                        {
-                            Id = 108,
-                            Kod = "NOK",
-                            Kraj = "🇳🇴",
-                            Nazwa = "Korona norweska",
-                            Symbol = "kr"
-                        },
-                        new
-                        {
-                            Id = 110,
-                            Kod = "SEK",
-                            Kraj = "🇸🇪",
-                            Nazwa = "Korona szwedzka",
-                            Symbol = "kr"
-                        },
-                        new
-                        {
-                            Id = 111,
-                            Kod = "CNY",
-                            Kraj = "🇨🇳",
-                            Nazwa = "Juan chiński",
-                            Symbol = "¥"
-                        },
-                        new
-                        {
-                            Id = 112,
-                            Kod = "NZD",
-                            Kraj = "🇳🇿",
-                            Nazwa = "Dolar nowozelandzki",
-                            Symbol = "NZ$"
-                        },
-                        new
-                        {
-                            Id = 113,
-                            Kod = "CZK",
-                            Kraj = "🇨🇿",
-                            Nazwa = "Korona czeska",
-                            Symbol = "Kč"
-                        },
-                        new
-                        {
-                            Id = 114,
-                            Kod = "DKK",
-                            Kraj = "🇩🇰",
-                            Nazwa = "Korona duńska",
-                            Symbol = "kr"
-                        },
-                        new
-                        {
-                            Id = 115,
-                            Kod = "HUF",
-                            Kraj = "🇭🇺",
-                            Nazwa = "Forint węgierski",
-                            Symbol = "Ft"
-                        },
-                        new
-                        {
-                            Id = 116,
-                            Kod = "ZAR",
-                            Kraj = "🇿🇦",
-                            Nazwa = "Rand południowoafrykański",
-                            Symbol = "R"
-                        },
-                        new
-                        {
-                            Id = 117,
-                            Kod = "ILS",
-                            Kraj = "🇮🇱",
-                            Nazwa = "Nowy izraelski szekel",
-                            Symbol = "₪"
-                        },
-                        new
-                        {
-                            Id = 118,
-                            Kod = "MXN",
-                            Kraj = "🇲🇽",
-                            Nazwa = "Peso meksykańskie",
-                            Symbol = "$"
-                        },
-                        new
-                        {
-                            Id = 119,
-                            Kod = "TRY",
-                            Kraj = "🇹🇷",
-                            Nazwa = "Lira turecka",
-                            Symbol = "₺"
-                        },
-                        new
-                        {
-                            Id = 120,
-                            Kod = "SGD",
-                            Kraj = "🇸🇬",
-                            Nazwa = "Dolar singapurski",
-                            Symbol = "S$"
-                        });
                 });
 
             modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.Akcje", b =>
@@ -492,17 +308,6 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                     b.Navigation("WalutaDo");
 
                     b.Navigation("WalutaZ");
-                });
-
-            modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.Komentarz", b =>
-                {
-                    b.HasOne("ProjektWWW.NET_FR_LB.Models.Uzytkownik", "Uzytkownik")
-                        .WithMany()
-                        .HasForeignKey("UzytkownikId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Uzytkownik");
                 });
 
             modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.UlubioneKursiki", b =>

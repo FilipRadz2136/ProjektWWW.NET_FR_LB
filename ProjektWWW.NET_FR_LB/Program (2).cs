@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using ProjektWWW.NET_FR_LB.Data;
 using ProjektWWW.NET_FR_LB.Models;
-using ProjektWWW.NET_FR_LB.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,11 +18,10 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddControllersWithViews();
 builder.Services.AddSession();
-builder.Services.AddScoped<IWalutaRepository, WalutaRepository>();
+builder.Services.AddHttpClient<CurrencyApiService>();
 
 var app = builder.Build();
 
-// Obsługa błędów i bezpieczeństwa
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");

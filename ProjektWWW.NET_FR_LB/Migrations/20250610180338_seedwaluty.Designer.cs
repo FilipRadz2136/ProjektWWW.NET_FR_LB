@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProjektWWW.NET_FR_LB.Data;
 
@@ -11,9 +12,11 @@ using ProjektWWW.NET_FR_LB.Data;
 namespace ProjektWWW.NET_FR_LB.Migrations
 {
     [DbContext(typeof(Kantor1DbContext))]
-    partial class Kantor1DbContextModelSnapshot : ModelSnapshot
+    [Migration("20250610180338_seedwaluty")]
+    partial class seedwaluty
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -126,31 +129,6 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                     b.HasIndex("WalutaZId");
 
                     b.ToTable("HistoriaWymianUzytkownika");
-                });
-
-            modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.Komentarz", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("DataDodania")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Tresc")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("UzytkownikId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UzytkownikId");
-
-                    b.ToTable("Komentarze");
                 });
 
             modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.Rola", b =>
@@ -271,7 +249,7 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                     b.HasData(
                         new
                         {
-                            Id = 100,
+                            Id = 1,
                             Kod = "USD",
                             Kraj = "🇺🇸",
                             Nazwa = "Dolar amerykański",
@@ -279,7 +257,7 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                         },
                         new
                         {
-                            Id = 101,
+                            Id = 2,
                             Kod = "EUR",
                             Kraj = "🇪🇺",
                             Nazwa = "Euro",
@@ -287,7 +265,7 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                         },
                         new
                         {
-                            Id = 102,
+                            Id = 3,
                             Kod = "GBP",
                             Kraj = "🇬🇧",
                             Nazwa = "Funt brytyjski",
@@ -295,7 +273,7 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                         },
                         new
                         {
-                            Id = 103,
+                            Id = 4,
                             Kod = "PLN",
                             Kraj = "🇵🇱",
                             Nazwa = "Złoty polski",
@@ -303,7 +281,7 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                         },
                         new
                         {
-                            Id = 104,
+                            Id = 5,
                             Kod = "JPY",
                             Kraj = "🇯🇵",
                             Nazwa = "Jen japoński",
@@ -311,7 +289,7 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                         },
                         new
                         {
-                            Id = 105,
+                            Id = 6,
                             Kod = "CHF",
                             Kraj = "🇨🇭",
                             Nazwa = "Frank szwajcarski",
@@ -319,7 +297,7 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                         },
                         new
                         {
-                            Id = 106,
+                            Id = 7,
                             Kod = "AUD",
                             Kraj = "🇦🇺",
                             Nazwa = "Dolar australijski",
@@ -327,7 +305,7 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                         },
                         new
                         {
-                            Id = 107,
+                            Id = 8,
                             Kod = "CAD",
                             Kraj = "🇨🇦",
                             Nazwa = "Dolar kanadyjski",
@@ -335,7 +313,7 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                         },
                         new
                         {
-                            Id = 108,
+                            Id = 9,
                             Kod = "NOK",
                             Kraj = "🇳🇴",
                             Nazwa = "Korona norweska",
@@ -343,7 +321,7 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                         },
                         new
                         {
-                            Id = 110,
+                            Id = 10,
                             Kod = "SEK",
                             Kraj = "🇸🇪",
                             Nazwa = "Korona szwedzka",
@@ -351,7 +329,7 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                         },
                         new
                         {
-                            Id = 111,
+                            Id = 11,
                             Kod = "CNY",
                             Kraj = "🇨🇳",
                             Nazwa = "Juan chiński",
@@ -359,7 +337,7 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                         },
                         new
                         {
-                            Id = 112,
+                            Id = 12,
                             Kod = "NZD",
                             Kraj = "🇳🇿",
                             Nazwa = "Dolar nowozelandzki",
@@ -367,7 +345,7 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                         },
                         new
                         {
-                            Id = 113,
+                            Id = 13,
                             Kod = "CZK",
                             Kraj = "🇨🇿",
                             Nazwa = "Korona czeska",
@@ -375,7 +353,7 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                         },
                         new
                         {
-                            Id = 114,
+                            Id = 14,
                             Kod = "DKK",
                             Kraj = "🇩🇰",
                             Nazwa = "Korona duńska",
@@ -383,7 +361,7 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                         },
                         new
                         {
-                            Id = 115,
+                            Id = 15,
                             Kod = "HUF",
                             Kraj = "🇭🇺",
                             Nazwa = "Forint węgierski",
@@ -391,7 +369,7 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                         },
                         new
                         {
-                            Id = 116,
+                            Id = 16,
                             Kod = "ZAR",
                             Kraj = "🇿🇦",
                             Nazwa = "Rand południowoafrykański",
@@ -399,7 +377,7 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                         },
                         new
                         {
-                            Id = 117,
+                            Id = 17,
                             Kod = "ILS",
                             Kraj = "🇮🇱",
                             Nazwa = "Nowy izraelski szekel",
@@ -407,7 +385,7 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                         },
                         new
                         {
-                            Id = 118,
+                            Id = 18,
                             Kod = "MXN",
                             Kraj = "🇲🇽",
                             Nazwa = "Peso meksykańskie",
@@ -415,7 +393,7 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                         },
                         new
                         {
-                            Id = 119,
+                            Id = 19,
                             Kod = "TRY",
                             Kraj = "🇹🇷",
                             Nazwa = "Lira turecka",
@@ -423,7 +401,7 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                         },
                         new
                         {
-                            Id = 120,
+                            Id = 20,
                             Kod = "SGD",
                             Kraj = "🇸🇬",
                             Nazwa = "Dolar singapurski",
@@ -492,17 +470,6 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                     b.Navigation("WalutaDo");
 
                     b.Navigation("WalutaZ");
-                });
-
-            modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.Komentarz", b =>
-                {
-                    b.HasOne("ProjektWWW.NET_FR_LB.Models.Uzytkownik", "Uzytkownik")
-                        .WithMany()
-                        .HasForeignKey("UzytkownikId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Uzytkownik");
                 });
 
             modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.UlubioneKursiki", b =>

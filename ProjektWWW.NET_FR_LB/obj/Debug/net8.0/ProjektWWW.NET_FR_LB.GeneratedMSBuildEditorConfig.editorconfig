@@ -34,12 +34,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/filip/Desktop/ProjektWWW.NET_FR_LB/ProjektWWW.NET_FR_LB/Views/Komentarze/Dodaj.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29tZW50YXJ6ZVxEb2Rhai5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/filip/Desktop/ProjektWWW.NET_FR_LB/ProjektWWW.NET_FR_LB/Views/Komentarze/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29tZW50YXJ6ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/filip/Desktop/ProjektWWW.NET_FR_LB/ProjektWWW.NET_FR_LB/Views/Konto/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29udG9cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/filip/Desktop/ProjektWWW.NET_FR_LB/ProjektWWW.NET_FR_LB/Views/Konto/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29udG9cUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/filip/Desktop/ProjektWWW.NET_FR_LB/ProjektWWW.NET_FR_LB/Views/Kursy/AktualnyKurs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3Vyc3lcQWt0dWFsbnlLdXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/filip/Desktop/ProjektWWW.NET_FR_LB/ProjektWWW.NET_FR_LB/Views/Shared/Error.cshtml]

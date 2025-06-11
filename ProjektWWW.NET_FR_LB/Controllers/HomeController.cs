@@ -1,26 +1,27 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using ProjektWWW.NET_FR_LB.Models;
-using ProjektWWW.NET_FR_LB.Repositories;
 using Microsoft.Extensions.Logging;
+using ProjektWWW.NET_FR_LB.Data;
+using ProjektWWW.NET_FR_LB.Models;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace ProjektWWW.NET_FR_LB.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly IWalutaRepository _walutaRepository;
+        private readonly Kantor1DbContext _context;
 
-        public HomeController(ILogger<HomeController> logger, IWalutaRepository walutaRepository)
+        public HomeController(ILogger<HomeController> logger, Kantor1DbContext context)
         {
             _logger = logger;
-            _walutaRepository = walutaRepository;
+            _context = context;
         }
 
         public async Task<IActionResult> Index()
         {
-            var waluty = await _walutaRepository.GetAllAsync();
+            var waluty = await _context.Waluty.ToListAsync();
             return View(waluty);
         }
 

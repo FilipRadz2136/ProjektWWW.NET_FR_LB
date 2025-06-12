@@ -17,16 +17,27 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Home" asp-action="Index">Strona główna</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Walutas" asp-action="Index">Waluty</a>
-                        </li>
+                        <!-- Tutaj nie ma już przelicznika walut ani alertów kursowych -->
                     </ul>
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ms-auto">
+                        @{
+                            var ilePowiadomien = ViewBag.NowePowiadomienia as int? ?? 0;
+                        }
                         @if (User.Identity?.IsAuthenticated ?? false)
                         {
+                            <li class="nav-item position-relative me-2">
+                                <a class="nav-link" asp-controller="Powiadomienia" asp-action="Lista" title="Powiadomienia">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                                        <path d="M8 16a2 2 0 0 0 1.985-1.75H6.015A2 2 0 0 0 8 16zm.104-14.804a1 1 0 0 0-1.208 0C5.668 2.07 4 4.058 4 7v3.586l-.707.707A1 1 0 0 0 4 13h8a1 1 0 0 0 .707-1.707L12 10.586V7c0-2.942-1.668-4.93-3.896-5.804z"/>
+                                    </svg>
+                                    @if (ilePowiadomien > 0)
+                                    {
+                                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                            @ilePowiadomien
+                                        </span>
+                                    }
+                                </a>
+                            </li>
                             <li class="nav-item">
                                 <span class="navbar-text text-light me-2">Witaj, @User.Identity.Name</span>
                             </li>
@@ -50,12 +61,7 @@
             </div>
         </nav>
     </header>
-    <li class="nav-item">
-        <a class="nav-link text-dark" asp-controller="Kursy" asp-action="AktualnyKurs">Kalkulator walut</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link text-dark" asp-controller="Komentarze" asp-action="Index">Komentarze</a>
-    </li>
+
     <div class="container mt-4">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -65,6 +71,31 @@
     <footer class="bg-dark text-light text-center py-3 mt-4">
         <div class="container">
             <p>&copy; 2025 - Projekt Kantor - <a asp-area="" asp-controller="Home" asp-action="Privacy" class="text-light">Prywatność</a></p>
+            <div class="container mt-3">
+                <h6 class="text-uppercase text-secondary mb-2" style="letter-spacing:1px;">Źródła danych</h6>
+                <ul class="list-inline small mb-0">
+                    <li class="list-inline-item">
+                        <a href="https://fixer.io/" target="_blank" class="text-decoration-none text-info">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                                <path d="M4.715 6.542a3 3 0 0 1 4.243 0l.543.543a.5.5 0 0 0 .708-.708l-.543-.543a4 4 0 1 0-5.657 5.657l.543.543a.5.5 0 0 0 .708-.708l-.543-.543a3 3 0 0 1 0-4.243z"/>
+                                <path d="M6.542 4.715a3 3 0 0 1 0 4.243l-.543.543a.5.5 0 0 0 .708.708l.543-.543a4 4 0 1 0-5.657-5.657l-.543-.543a.5.5 0 0 0-.708.708l.543.543a3 3 0 0 1 4.243 0z"/>
+                            </svg>
+                            Fixer.io
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <span class="text-muted">/api/kurs (wewnętrzne API kursów)</span>
+                    </li>
+                </ul>
+                <hr class="bg-secondary my-4" />
+                <a asp-controller="Komentarze" asp-action="Lista" class="text-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+                        <path d="M2 2a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h2.586l2.707 2.707a1 1 0 0 0 1.414 0L11.414 13H14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm0 1h12a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-2.586l-2.707 2.707a.5.5 0 0 1-.707 0L5.586 11H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/>
+                        <path d="M3 6.5a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm4 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm4 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0z"/>
+                    </svg>
+                    Komentarze
+                </a>
+            </div>
         </div>
     </footer>
 

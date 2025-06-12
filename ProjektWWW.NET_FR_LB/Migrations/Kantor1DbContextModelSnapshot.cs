@@ -22,7 +22,7 @@ namespace ProjektWWW.NET_FR_LB.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.Akcje", b =>
+            modelBuilder.Entity("Komentarz", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -30,25 +30,23 @@ namespace ProjektWWW.NET_FR_LB.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Akcja")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("Data")
+                    b.Property<DateTime>("DataDodania")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Szczegoly")
+                    b.Property<string>("NazwaPliku")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Tresc")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("UzytkownikId")
-                        .HasColumnType("int");
+                    b.Property<string>("Uzytkownik")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UzytkownikId");
-
-                    b.ToTable("Akcje");
+                    b.ToTable("Komentarze");
                 });
 
             modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.AlertKursu", b =>
@@ -91,44 +89,7 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                     b.ToTable("AlertyKursow");
                 });
 
-            modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.HistoriaWymianUzytkownika", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("DataPrzeliczenia")
-                        .HasColumnType("datetime2");
-
-                    b.Property<double>("KwotaWejsciowa")
-                        .HasColumnType("float");
-
-                    b.Property<double>("KwotaWynikowa")
-                        .HasColumnType("float");
-
-                    b.Property<int>("UzytkownikId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("WalutaDoId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("WalutaZId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UzytkownikId");
-
-                    b.HasIndex("WalutaDoId");
-
-                    b.HasIndex("WalutaZId");
-
-                    b.ToTable("HistoriaWymianUzytkownika");
-                });
-
-            modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.Komentarz", b =>
+            modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.Powiadomienie", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -138,6 +99,9 @@ namespace ProjektWWW.NET_FR_LB.Migrations
 
                     b.Property<DateTime>("DataDodania")
                         .HasColumnType("datetime2");
+
+                    b.Property<bool>("Przeczytane")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Tresc")
                         .IsRequired()
@@ -150,7 +114,7 @@ namespace ProjektWWW.NET_FR_LB.Migrations
 
                     b.HasIndex("UzytkownikId");
 
-                    b.ToTable("Komentarze");
+                    b.ToTable("Powiadomienia");
                 });
 
             modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.Rola", b =>
@@ -168,37 +132,6 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Rola");
-                });
-
-            modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.UlubioneKursiki", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("DataDodania")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("UzytkownikId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("WalutaDoId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("WalutaZId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UzytkownikId");
-
-                    b.HasIndex("WalutaDoId");
-
-                    b.HasIndex("WalutaZId");
-
-                    b.ToTable("UlubioneKursiki");
                 });
 
             modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.Uzytkownik", b =>
@@ -431,15 +364,6 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                         });
                 });
 
-            modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.Akcje", b =>
-                {
-                    b.HasOne("ProjektWWW.NET_FR_LB.Models.Uzytkownik", "Uzytkownik")
-                        .WithMany()
-                        .HasForeignKey("UzytkownikId");
-
-                    b.Navigation("Uzytkownik");
-                });
-
             modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.AlertKursu", b =>
                 {
                     b.HasOne("ProjektWWW.NET_FR_LB.Models.Uzytkownik", "Uzytkownik")
@@ -467,34 +391,7 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                     b.Navigation("WalutaZ");
                 });
 
-            modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.HistoriaWymianUzytkownika", b =>
-                {
-                    b.HasOne("ProjektWWW.NET_FR_LB.Models.Uzytkownik", "Uzytkownik")
-                        .WithMany()
-                        .HasForeignKey("UzytkownikId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("ProjektWWW.NET_FR_LB.Models.Waluta", "WalutaDo")
-                        .WithMany()
-                        .HasForeignKey("WalutaDoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("ProjektWWW.NET_FR_LB.Models.Waluta", "WalutaZ")
-                        .WithMany()
-                        .HasForeignKey("WalutaZId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Uzytkownik");
-
-                    b.Navigation("WalutaDo");
-
-                    b.Navigation("WalutaZ");
-                });
-
-            modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.Komentarz", b =>
+            modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.Powiadomienie", b =>
                 {
                     b.HasOne("ProjektWWW.NET_FR_LB.Models.Uzytkownik", "Uzytkownik")
                         .WithMany()
@@ -503,33 +400,6 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                         .IsRequired();
 
                     b.Navigation("Uzytkownik");
-                });
-
-            modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.UlubioneKursiki", b =>
-                {
-                    b.HasOne("ProjektWWW.NET_FR_LB.Models.Uzytkownik", "Uzytkownik")
-                        .WithMany()
-                        .HasForeignKey("UzytkownikId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("ProjektWWW.NET_FR_LB.Models.Waluta", "WalutaDo")
-                        .WithMany()
-                        .HasForeignKey("WalutaDoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("ProjektWWW.NET_FR_LB.Models.Waluta", "WalutaZ")
-                        .WithMany()
-                        .HasForeignKey("WalutaZId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Uzytkownik");
-
-                    b.Navigation("WalutaDo");
-
-                    b.Navigation("WalutaZ");
                 });
 
             modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.UzytkownikRola", b =>

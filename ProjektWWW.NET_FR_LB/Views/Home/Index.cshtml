@@ -2,57 +2,62 @@
     ViewData["Title"] = "Strona główna kantoru";
 }
 
-<div class="container mt-5">
-    <!-- Nagłówek -->
-    <div class="text-center mb-5">
-        <h1 class="display-4">Witamy w Kantorze Online</h1>
-        <p class="lead">Aktualne kursy, szybkie przeliczenia, historia i alerty kursowe</p>
-    </div>
+<div class="container-fluid mt-5">
+    <div class="row justify-content-center">
+        <!-- Lewa reklama -->
+        <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center">
+            <div style="width:160px; height:600px; background:#f8f9fa; border:1px solid #ddd; border-radius:10px; display:flex; align-items:center; justify-content:center; overflow:hidden;">
+                <img src="~/images/allegro.png" alt="Reklama Allegro" style="max-width:100%; max-height:100%;">
+            </div>
+        </div>
+        <!-- Główna treść -->
+        <div class="col-lg-8">
+            <div class="text-center mb-5">
+                <h1 class="display-4">Witamy w Kantorze Online</h1>
+                <p class="lead">Aktualne kursy, szybkie przeliczenia, historia i alerty kursowe</p>
+            </div>
 
-    <div class="row">
-        <!-- Panel przelicznika -->
-        <div class="col-md-6 mb-4">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <h5 class="card-title">Przelicznik walut</h5>
-                    <!-- formularz przelicznika (do uzupełnienia później) -->
-                    <p class="text-muted">[Formularz przelicznika – wkrótce]</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6 mb-4">
+                    <a asp-controller="Kursy" asp-action="AktualnyKurs" style="text-decoration:none;">
+                        <div class="card shadow-lg border-0" style="cursor:pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+                            <div class="card-body text-center">
+                                <div class="mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#0d6efd" class="bi bi-currency-exchange" viewBox="0 0 16 16">
+                                        <path d="M8.5 13a5.5 5.5 0 1 1 5.5-5.5.5.5 0 0 1-1 0A4.5 4.5 0 1 0 8.5 12a.5.5 0 0 1 0 1z"/>
+                                        <path d="M10.854 6.646a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L9.207 9H13.5a.5.5 0 0 0 0-1H9.207l1.647-1.646a.5.5 0 0 0 0-.708z"/>
+                                        <path d="M5.146 9.354a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0 0-.708l-2-2a.5.5 0 1 0-.708.708L6.793 7H2.5a.5.5 0 0 0 0 1h4.293L5.146 9.354z"/>
+                                    </svg>
+                                </div>
+                                <h5 class="card-title mb-2"><b>Przelicznik walut</b></h5>
+                                <span class="text-muted">Oblicz szybko i wygodnie</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-md-6 mb-4">
+                    <a asp-controller="Alerty" asp-action="Lista" style="text-decoration:none;">
+                        <div class="card shadow-lg border-0" style="cursor:pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+                            <div class="card-body text-center">
+                                <div class="mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#ffc107" class="bi bi-bell" viewBox="0 0 16 16">
+                                        <path d="M8 16a2 2 0 0 0 1.985-1.75H6.015A2 2 0 0 0 8 16zm.104-14.804a1 1 0 0 0-1.208 0C5.668 2.07 4 4.058 4 7v3.586l-.707.707A1 1 0 0 0 4 13h8a1 1 0 0 0 .707-1.707L12 10.586V7c0-2.942-1.668-4.93-3.896-5.804z"/>
+                                    </svg>
+                                </div>
+                                <h5 class="card-title mb-2"><b>Alerty kursowe</b></h5>
+                                <span class="text-muted">Ustaw powiadomienie o kursie</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-
-        <!-- Panel kursów -->
-        <div class="col-md-6 mb-4">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <h5 class="card-title">Aktualne kursy</h5>
-                    <!-- lista kursów (do uzupełnienia później) -->
-                    <p class="text-muted">[Lista najnowszych kursów – wkrótce]</p>
-                </div>
+        <!-- Prawa reklama -->
+        <div class="col-lg-2 d-none d-lg-flex align-items-center justify-content-center">
+            <div style="width:160px; height:600px; background:#f8f9fa; border:1px solid #ddd; border-radius:10px; display:flex; align-items:center; justify-content:center; overflow:hidden;">
+                <img src="~/images/rtv.png" alt="Reklama RTV Euro AGD" style="max-width:100%; max-height:100%;">
             </div>
         </div>
     </div>
-
-    <!-- Alert kursowy -->
-    <div class="my-5 text-center">
-        <h4>Alerty kursowe</h4>
-        <p class="text-muted">[Możliwość ustawienia alertu – wkrótce]</p>
-    </div>
-
-    <!-- Historia wymian -->
-    <div class="my-5">
-        <h4>Historia wymian</h4>
-        <p class="text-muted">[Historia użytkownika – tylko po zalogowaniu]</p>
-    </div>
-
-    <!-- Źródła kursów -->
-    <div class="my-5">
-        <h4>Źródła danych</h4>
-        <p class="text-muted">[Informacje o źródłach kursów – wkrótce]</p>
-    </div>
-
-    <!-- Stopka -->
-    <footer class="text-center text-muted mt-5">
-        <p>&copy; 2025 Kantor Internetowy | Projekt ASP.NET</p>
-    </footer>
 </div>

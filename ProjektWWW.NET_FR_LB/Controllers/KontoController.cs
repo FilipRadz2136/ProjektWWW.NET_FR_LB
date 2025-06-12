@@ -22,13 +22,14 @@ namespace ProjektWWW.NET_FR_LB.Controllers
         }
 
         [HttpGet]
-        public IActionResult Login()
+        public IActionResult Login(string returnUrl = null)
         {
+            ViewBag.ReturnUrl = returnUrl;
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> Login(string email, string haslo)
+        public async Task<IActionResult> Login(string email, string haslo, string returnUrl = null)
         {
             if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(haslo))
             {
@@ -48,10 +49,10 @@ namespace ProjektWWW.NET_FR_LB.Controllers
             }
 
             var claims = new List<Claim>
-            {
-                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-                new Claim(ClaimTypes.Name, user.Email)
-            };
+    {
+        new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+        new Claim(ClaimTypes.Name, user.Email)
+    };
 
             foreach (var rola in user.UzytkownikRole)
             {
@@ -63,8 +64,12 @@ namespace ProjektWWW.NET_FR_LB.Controllers
 
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
 
+            if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
+                return Redirect(returnUrl);
+
             return RedirectToAction("Index", "Home");
         }
+
         [HttpGet]
         public IActionResult Register()
         {
@@ -107,6 +112,7 @@ namespace ProjektWWW.NET_FR_LB.Controllers
                 });
                 await _context.SaveChangesAsync();
             }
+            
 
             // automatyczne logowanie
             var claims = new List<Claim>
@@ -133,9 +139,14 @@ namespace ProjektWWW.NET_FR_LB.Controllers
         }
 
         //narazie zwykly hash moze pozniej bedzie inny
-        private string Hash(string input)
-        {
-            return input.GetHashCode().ToString();
-        }
+private string Hash(string input)
+{
+    using (var sha = System.Security.Cryptography.SHA256.Create())
+    {
+        var bytes = System.Text.Encoding.UTF8.GetBytes(input);
+        var hash = sha.ComputeHash(bytes);
+        return Convert.ToBase64String(hash);
+    }
+}
     }
 }

@@ -1,0 +1,29 @@
+@model IEnumerable<ProjektWWW.NET_FR_LB.Models.AlertKursu>
+
+<h2>Twoje alerty kursowe</h2>
+<a asp-action="Dodaj" class="btn btn-success mb-3">Dodaj nowy alert</a>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Waluta z</th>
+            <th>Waluta do</th>
+            <th>Próg kursu</th>
+            <th>Kierunek</th>
+            <th>Aktywny</th>
+            <th>Data utworzenia</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var a in Model)
+        {
+            <tr>
+                <td>@a.WalutaZ?.Nazwa</td>
+                <td>@a.WalutaDo?.Nazwa</td>
+                <td>@a.ProgKursu</td>
+                <td>@(a.PowiadomGdyMniejszy ? "Gdy kurs < próg" : "Gdy kurs > próg")</td>
+                <td>@(a.Aktywny ? "Tak" : "Nie")</td>
+                <td>@a.DataUtworzenia.ToString("yyyy-MM-dd HH:mm")</td>
+            </tr>
+        }
+    </tbody>
+</table>

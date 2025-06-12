@@ -26,6 +26,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\filip\Desktop\ProjektWWW.NET_FR_LB\ProjektWWW.NET_FR_LB
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/filip/Desktop/ProjektWWW.NET_FR_LB/ProjektWWW.NET_FR_LB/Views/Alerty/Dodaj.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxlcnR5XERvZGFqLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/filip/Desktop/ProjektWWW.NET_FR_LB/ProjektWWW.NET_FR_LB/Views/Alerty/Lista.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxlcnR5XExpc3RhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/filip/Desktop/ProjektWWW.NET_FR_LB/ProjektWWW.NET_FR_LB/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,12 +42,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/filip/Desktop/ProjektWWW.NET_FR_LB/ProjektWWW.NET_FR_LB/Views/Komentarze/Dodaj.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29tZW50YXJ6ZVxEb2Rhai5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/filip/Desktop/ProjektWWW.NET_FR_LB/ProjektWWW.NET_FR_LB/Views/Komentarze/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29tZW50YXJ6ZVxJbmRleC5jc2h0bWw=
+[C:/Users/filip/Desktop/ProjektWWW.NET_FR_LB/ProjektWWW.NET_FR_LB/Views/Komentarze/Lista.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29tZW50YXJ6ZVxMaXN0YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/filip/Desktop/ProjektWWW.NET_FR_LB/ProjektWWW.NET_FR_LB/Views/Konto/Login.cshtml]
@@ -52,6 +56,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/filip/Desktop/ProjektWWW.NET_FR_LB/ProjektWWW.NET_FR_LB/Views/Kursy/AktualnyKurs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS3Vyc3lcQWt0dWFsbnlLdXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/filip/Desktop/ProjektWWW.NET_FR_LB/ProjektWWW.NET_FR_LB/Views/Powiadomienia/Lista.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG93aWFkb21pZW5pYVxMaXN0YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/filip/Desktop/ProjektWWW.NET_FR_LB/ProjektWWW.NET_FR_LB/Views/Shared/Error.cshtml]

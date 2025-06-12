@@ -1,0 +1,27 @@
+@model ProjektWWW.NET_FR_LB.Models.AlertKursu
+
+<h2>Dodaj alert kursowy</h2>
+@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+<form asp-action="Dodaj" method="post">
+    @Html.AntiForgeryToken()
+    <div class="mb-3">
+        <label class="form-label">Waluta z:</label>
+        <select asp-for="WalutaZId" asp-items="ViewBag.Waluty" class="form-select"></select>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Waluta do:</label>
+        <select asp-for="WalutaDoId" asp-items="ViewBag.Waluty" class="form-select"></select>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Próg kursu:</label>
+        <input asp-for="ProgKursu" class="form-control" />
+    </div>
+    <div class="form-check mb-3">
+        <input asp-for="PowiadomGdyMniejszy" class="form-check-input" />
+        <label class="form-check-label" asp-for="PowiadomGdyMniejszy">
+            Powiadom, gdy kurs będzie mniejszy niż próg
+        </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Ustaw alert</button>
+</form>

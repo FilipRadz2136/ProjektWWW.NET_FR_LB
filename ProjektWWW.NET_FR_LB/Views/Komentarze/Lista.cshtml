@@ -1,0 +1,43 @@
+@model IEnumerable<Komentarz>
+@{
+    ViewData["Title"] = "Komentarze";
+}
+
+<div class="container" style="max-width:700px;">
+    <h4>@Model.Count() komentarzy</h4>
+    <form asp-controller="Komentarze" asp-action="Dodaj" method="post" enctype="multipart/form-data" class="mb-4 d-flex align-items-start">
+        <img src="https://www.gravatar.com/avatar/?d=mp" class="rounded-circle me-2" width="40" height="40" />
+        <textarea name="tresc" class="form-control me-2" rows="2" placeholder="Dodaj komentarz..." required></textarea>
+        <input type="file" name="plik" class="form-control form-control-sm me-2" style="max-width:150px;" />
+        <button type="submit" class="btn btn-primary">Dodaj</button>
+    </form>
+    <hr />
+    @foreach (var komentarz in Model)
+{
+    <div class="d-flex mb-4">
+        <img src="https://www.gravatar.com/avatar/?d=mp" class="rounded-circle me-2" width="40" height="40" />
+        <div>
+            <b>@komentarz.Uzytkownik</b> <span class="text-muted" style="font-size:small;">@komentarz.DataDodania.ToString("g")</span><br />
+            @if (!string.IsNullOrEmpty(komentarz.NazwaPliku))
+            {
+                var ext = System.IO.Path.GetExtension(komentarz.NazwaPliku).ToLower();
+                if (ext == ".jpg" || ext == ".jpeg" || ext == ".png" || ext == ".gif")
+                {
+                    <img src="~/uploads/@komentarz.NazwaPliku" alt="obrazek" style="max-width:300px;max-height:200px;display:block;margin:10px 0;" />
+                }
+                else
+                {
+                    <a href="~/uploads/@komentarz.NazwaPliku" target="_blank">Załącznik</a>
+                }
+            }
+            <div>@komentarz.Tresc</div>
+            <!-- Przycisk usuwania -->
+            @if (User.IsInRole("Moderator"))
+            {<form asp-action="Usun" asp-route-id="@komentarz.Id" method="post" style="display:inline;">
+                <button type="submit" class="btn btn-danger btn-sm mt-2" onclick="return confirm('Na pewno usunąć komentarz?');">Usuń</button>
+            </form>}
+        </div>
+    </div>
+    <hr />
+}
+</div>

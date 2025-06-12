@@ -1,0 +1,15 @@
+@model IEnumerable<ProjektWWW.NET_FR_LB.Models.Powiadomienie>
+
+<h2>Twoje powiadomienia</h2>
+<ul class="list-group">
+@foreach(var p in Model)
+{
+    <li class="list-group-item @(p.Przeczytane ? "text-muted" : "")">
+        <b>@p.DataDodania.ToString("g"):</b> @p.Tresc
+        @if (!p.Przeczytane)
+        {
+            <span class="badge bg-success ms-2">Nowe</span>
+        }
+    </li>
+}
+</ul>

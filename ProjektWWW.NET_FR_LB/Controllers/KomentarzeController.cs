@@ -1,70 +1,95 @@
-﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using ProjektWWW.NET_FR_LB.Data;
 using ProjektWWW.NET_FR_LB.Models;
-using System;
-using System.Linq;
-using System.Security.Claims;
+using ProjektWWW.NET_FR_LB.Data;
 using System.Threading.Tasks;
+using System.Linq;
 
-namespace ProjektWWW.NET_FR_LB.Controllers
+
+public class KomentarzeController : Controller
 {
-    [Authorize]
-    public class KomentarzeController : Controller
+    private readonly Kantor1DbContext _context;
+    private readonly IPowiadomienieRepository _powiadomienieRepo;
+    public KomentarzeController(Kantor1DbContext context, IPowiadomienieRepository powiadomienieRepo)
     {
-        private readonly Kantor1DbContext _context;
+        _context = context;
+        _powiadomienieRepo = powiadomienieRepo;
+    }
 
-        public KomentarzeController(Kantor1DbContext context)
-        {
-            _context = context;
-        }
+    [HttpPost]
+    public async Task<IActionResult> Dodaj(string tresc, IFormFile plik)
+    {
+        if (string.IsNullOrWhiteSpace(tresc))
+            return RedirectToAction("Index", "Home");
 
-        // POST: /Komentarze/Dodaj
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Dodaj(Komentarz komentarz)
+        string nazwaPliku = null;
+        if (plik != null && plik.Length > 0)
         {
-            if (string.IsNullOrWhiteSpace(komentarz.Tresc))
+            var uploads = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
+            if (!Directory.Exists(uploads))
+                Directory.CreateDirectory(uploads);
+
+            nazwaPliku = Guid.NewGuid().ToString() + Path.GetExtension(plik.FileName);
+            var filePath = Path.Combine(uploads, nazwaPliku);
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
             {
-                ModelState.AddModelError("", "Treść komentarza nie może być pusta.");
-                return RedirectToAction("AktualnyKurs", "Kursy");
+                await plik.CopyToAsync(stream);
             }
-
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            if (userId == null)
-                return Unauthorized();
-
-            komentarz.UzytkownikId = int.Parse(userId);
-            komentarz.DataDodania = DateTime.Now;
-
-            _context.Komentarze.Add(komentarz);
-            await _context.SaveChangesAsync();
-
-            return RedirectToAction("AktualnyKurs", "Kursy");
         }
 
-        // GET: /Komentarze/Lista
-        [AllowAnonymous]
-        public async Task<IActionResult> Lista()
+        var komentarz = new Komentarz
         {
-            var komentarze = await _context.Komentarze
-                .Include(k => k.Uzytkownik)
-                .OrderByDescending(k => k.DataDodania)
-                .ToListAsync();
+            Tresc = tresc,
+            DataDodania = DateTime.Now,
+            Uzytkownik = User.Identity.IsAuthenticated ? User.Identity.Name : "Anonim",
+            NazwaPliku = nazwaPliku
+        };
 
-            return View(komentarze); // lub PartialView("_ListaKomentarzy", komentarze)
-        }
-
-        // (opcjonalnie) GET: /Komentarze/Index dla moderatora
-        [Authorize(Roles = "Moderator")]
-        public async Task<IActionResult> Index()
+        _context.Komentarze.Add(komentarz);
+        await _context.SaveChangesAsync();
+        if (User.Identity.IsAuthenticated)
         {
-            var komentarze = await _context.Komentarze
-                .Include(k => k.Uzytkownik)
-                .ToListAsync();
-
-            return View(komentarze);
+            var userId = int.Parse(User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier).Value);
+            _powiadomienieRepo.Dodaj(new Powiadomienie
+            {
+                UzytkownikId = userId,
+                Tresc = "Twój komentarz został dodany!",
+                DataDodania = DateTime.Now,
+                Przeczytane = false
+            });
         }
+        return RedirectToAction("Lista");
+    }
+
+    public IActionResult Lista()
+    {
+        var komentarze = _context.Komentarze.OrderByDescending(k => k.DataDodania).ToList();
+        return View(komentarze);
+    }
+    [HttpPost]
+    public IActionResult Usun(int id)
+    {
+        var komentarz = _context.Komentarze.FirstOrDefault(k => k.Id == id);
+        if (komentarz != null)
+        {
+                    if (!string.IsNullOrEmpty(komentarz.Uzytkownik) && komentarz.Uzytkownik != "Anonim")
+        {
+            // Znajdź użytkownika po nazwie (UserName)
+            var uzytkownik = _context.Uzytkownicy.FirstOrDefault(u => u.Email == komentarz.Uzytkownik);
+            if (uzytkownik != null)
+            {
+                _powiadomienieRepo.Dodaj(new Powiadomienie
+                {
+                    UzytkownikId = uzytkownik.Id,
+                    Tresc = "Twój komentarz został usunięty przez moderatora.",
+                    DataDodania = DateTime.Now,
+                    Przeczytane = false
+                });
+            }
+        }
+            _context.Komentarze.Remove(komentarz);
+            _context.SaveChanges();
+        }
+        return RedirectToAction("Lista");
     }
 }

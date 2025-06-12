@@ -5,6 +5,7 @@
 <h2>Logowanie</h2>
 
 <form asp-action="Login" method="post">
+    <input type="hidden" name="returnUrl" value="@ViewBag.ReturnUrl" />
     <div class="form-group">
         <label for="email">Email</label>
         <input type="email" name="email" class="form-control" required />

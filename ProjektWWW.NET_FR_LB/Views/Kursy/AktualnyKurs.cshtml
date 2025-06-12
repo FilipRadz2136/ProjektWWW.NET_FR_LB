@@ -1,29 +1,66 @@
 ﻿@{
-    ViewData["Title"] = "Aktualny Kurs";
+    ViewData["Title"] = "Kalkulator walutowy";
+    var waluty = ViewBag.Waluty as IEnumerable<ProjektWWW.NET_FR_LB.Models.Waluta>;
+    string from = ViewBag.From;
+    string to = ViewBag.To;
+    decimal amount = ViewBag.Amount ?? 1;
 }
 
-<h2>Aktualny Kurs Waluty</h2>
+<h2 class="mb-4">Kalkulator walutowy</h2>
 
-<form asp-action="AktualnyKurs" method="get">
-    <div class="form-group">
-        <label for="from">Z waluty:</label>
-        <input type="text" class="form-control" id="from" name="from" value="@ViewBag.From" />
-    </div>
-    <div class="form-group">
-        <label for="to">Na walutę:</label>
-        <input type="text" class="form-control" id="to" name="to" value="@ViewBag.To" />
-    </div>
-    <button type="submit" class="btn btn-primary mt-2">Pobierz kurs</button>
-</form>
+<div class="bg-light p-4 rounded shadow-sm">
+    <form asp-action="AktualnyKurs" method="get" class="row align-items-end g-2">
+        <div class="col-md-3">
+            <label for="amount" class="form-label mb-1">Kwota:</label>
+            <input type="number" step="any" min="0" class="form-control form-control-lg" id="amount" name="amount" value="@amount" required />
+        </div>
+        <div class="col-md-3">
+            <label for="from" class="form-label mb-1">Mam:</label>
+            <select class="form-select form-select-lg" id="from" name="from" required>
+                <option value="">Wybierz walutę</option>
+                @foreach (var w in waluty)
+                {
+<option value="@w.Kod" selected="@(from == w.Kod ? "selected" : null)"> @w.Kod - @w.Nazwa </option>                }
+            </select>
+        </div>
+        <div class="col-md-1 text-center">
+            <span class="fs-2">&#8594;</span>
+        </div>
+        <div class="col-md-3">
+            <label for="to" class="form-label mb-1">Chcę otrzymać:</label>
+            <select class="form-select form-select-lg" id="to" name="to" required>
+                <option value="">Wybierz walutę</option>
+                @foreach (var w in waluty)
+                {
+<option value="@w.Kod" selected="@(to == w.Kod ? "selected" : null)"> @w.Kod - @w.Nazwa </option>                }
+            </select>
+        </div>
+        <div class="col-md-2">
+            <button type="submit" class="btn btn-primary btn-lg w-100">Przelicz</button>
+        </div>
+    </form>
 
-<div class="mt-4">
-    <h5>Wynik:</h5>
-    @if (ViewBag.Kurs != null)
-    {
-        <p class="text-success"><strong>@ViewBag.Kurs</strong></p>
-    }
-    else if (ViewBag.Blad != null)
-    {
-        <p class="text-danger">@ViewBag.Blad</p>
-    }
+    <div class="mt-4">
+        <div class="d-flex align-items-center justify-content-center">
+            @if (ViewBag.Kurs != null && !string.IsNullOrEmpty(from) && !string.IsNullOrEmpty(to))
+            {
+                var kurs = (decimal)ViewBag.Kurs;
+                var wynik = kurs * amount;
+                <span class="fs-2 fw-bold">@amount.ToString("N2") @from</span>
+                <span class="fs-2 mx-2">=</span>
+                <span class="fs-2 fw-bold text-success">@wynik.ToString("N2") @to</span>
+            }
+        </div>
+        @if (ViewBag.Kurs != null && !string.IsNullOrEmpty(from) && !string.IsNullOrEmpty(to))
+        {
+            var kurs = (decimal)ViewBag.Kurs;
+            <div class="text-muted mt-2">
+                1 @from = @kurs.ToString("N4") @to, według średniego kursu z dnia @DateTime.Now.ToString("dd.MM.yyyy")
+            </div>
+        }
+        else if (ViewBag.Blad != null)
+        {
+            <div class="text-danger mt-2">@ViewBag.Blad</div>
+        }
+    </div>
 </div>

@@ -1,12 +1,15 @@
-﻿namespace ProjektWWW.NET_FR_LB.Models
-{
-    public class Komentarz
-    {
-        public int Id { get; set; }
-        public string Tresc { get; set; }
-        public DateTime DataDodania { get; set; }
+using System;
+using System.ComponentModel.DataAnnotations;
 
-        public int UzytkownikId { get; set; }
-        public Uzytkownik Uzytkownik { get; set; }
-    }
+public class Komentarz
+{
+    public int Id { get; set; }
+
+    [Required]
+    public string Tresc { get; set; }
+
+    public DateTime DataDodania { get; set; } = DateTime.Now;
+
+    public string Uzytkownik { get; set; } 
+    public string? NazwaPliku { get; set; }
 }

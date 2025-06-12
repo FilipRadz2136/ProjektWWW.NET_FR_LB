@@ -13,12 +13,20 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\images\\allegro.png",
+      "PackagePath": "staticwebassets\\images\\allegro.png"
+    },
+    {
       "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\images\\kantor1.jpeg",
       "PackagePath": "staticwebassets\\images\\kantor1.jpeg"
     },
     {
       "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\images\\kantor2.jpg",
       "PackagePath": "staticwebassets\\images\\kantor2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\images\\rtv.png",
+      "PackagePath": "staticwebassets\\images\\rtv.png"
     },
     {
       "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\images\\slide2.jpeg",
@@ -257,6 +265,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\06f0ae0e-cb7c-4e59-9f44-154dc2bb0677.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\06f0ae0e-cb7c-4e59-9f44-154dc2bb0677.jpeg"
+    },
+    {
       "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\1935adc0-aad5-4939-97ed-b64e73d5035e - kopiować (2).jpeg",
       "PackagePath": "staticwebassets\\uploads\\1935adc0-aad5-4939-97ed-b64e73d5035e - kopiować (2).jpeg"
     },
@@ -269,6 +281,10 @@
       "PackagePath": "staticwebassets\\uploads\\1935adc0-aad5-4939-97ed-b64e73d5035e.jpeg"
     },
     {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\1e679c58-5ebd-49f0-8d99-0eea3585c3a3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\1e679c58-5ebd-49f0-8d99-0eea3585c3a3.jpg"
+    },
+    {
       "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\2004af4d-d4d2-4668-87a2-3662d351f25c.jpeg",
       "PackagePath": "staticwebassets\\uploads\\2004af4d-d4d2-4668-87a2-3662d351f25c.jpeg"
     },
@@ -277,8 +293,24 @@
       "PackagePath": "staticwebassets\\uploads\\4c96f811-7bf7-47e0-8bff-38e9696b54fc.jpeg"
     },
     {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\5e8cefc1-9145-4e1b-b9ef-29d206c60595.jpg",
+      "PackagePath": "staticwebassets\\uploads\\5e8cefc1-9145-4e1b-b9ef-29d206c60595.jpg"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\74c984bc-1da8-40eb-a835-ae4a8c9cf71a.jpg",
+      "PackagePath": "staticwebassets\\uploads\\74c984bc-1da8-40eb-a835-ae4a8c9cf71a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\81e98487-73e9-4045-9490-3300513f2773.jpg",
+      "PackagePath": "staticwebassets\\uploads\\81e98487-73e9-4045-9490-3300513f2773.jpg"
+    },
+    {
       "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\83d8fcd2-0755-4615-a125-35ca3e9167ed.png",
       "PackagePath": "staticwebassets\\uploads\\83d8fcd2-0755-4615-a125-35ca3e9167ed.png"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\8cda7076-969e-4f79-a22b-20df2377e1a8.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\8cda7076-969e-4f79-a22b-20df2377e1a8.jpeg"
     },
     {
       "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\bg.png",
@@ -295,6 +327,14 @@
     {
       "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\cn.png",
       "PackagePath": "staticwebassets\\uploads\\cn.png"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\d1acb741-dcff-4594-b7bf-d776102ae4a4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\d1acb741-dcff-4594-b7bf-d776102ae4a4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\d9945cef-0f67-47a8-95b9-86d349a937cd.jpg",
+      "PackagePath": "staticwebassets\\uploads\\d9945cef-0f67-47a8-95b9-86d349a937cd.jpg"
     },
     {
       "Id": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\eu.png",

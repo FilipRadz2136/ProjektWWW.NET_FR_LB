@@ -19,7 +19,7 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddControllersWithViews();
 builder.Services.AddSession();
 builder.Services.AddHttpClient<CurrencyApiService>();
-
+builder.Services.AddScoped<IPowiadomienieRepository, PowiadomienieRepository>();
 var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())

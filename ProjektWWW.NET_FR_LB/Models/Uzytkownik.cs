@@ -4,9 +4,8 @@
     {
         public int Id { get; set; }
         public string Email { get; set; }
-        public string HasloHash { get; set; }
         public DateTime DataRejestracji { get; set; }
-
+        public string HasloHash { get; set; }
         public ICollection<UzytkownikRola> UzytkownikRole { get; set; } = new List<UzytkownikRola>();
     }
 }

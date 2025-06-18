@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjektWWW.NET_FR_LB", "ProjektWWW.NET_FR_LB\ProjektWWW.NET_FR_LB.csproj", "{912FCC3C-B6F3-47A8-A630-7E88F123024D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjektWWW.NET_FR_LB", "ProjektWWW.NET_FR_LB\ProjektWWW.NET_FR_LB.csproj", "{912FCC3C-B6F3-47A8-A630-7E88F123024D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementy rozwiązania", "Elementy rozwiązania", "{810FB2C9-D83C-4352-8267-4A433F58761B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjektWWW.Tests", "ProjektWWW.Tests\ProjektWWW.Tests.csproj", "{2E4B6479-C7D8-4D57-8435-64D70B9E250B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,10 @@ Global
 		{912FCC3C-B6F3-47A8-A630-7E88F123024D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{912FCC3C-B6F3-47A8-A630-7E88F123024D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{912FCC3C-B6F3-47A8-A630-7E88F123024D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E4B6479-C7D8-4D57-8435-64D70B9E250B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E4B6479-C7D8-4D57-8435-64D70B9E250B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E4B6479-C7D8-4D57-8435-64D70B9E250B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E4B6479-C7D8-4D57-8435-64D70B9E250B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

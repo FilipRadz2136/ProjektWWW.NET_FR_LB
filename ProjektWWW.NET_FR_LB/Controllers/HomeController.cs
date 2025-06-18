@@ -30,10 +30,26 @@ namespace ProjektWWW.NET_FR_LB.Controllers
             return View();
         }
 
+        [HttpGet]
+        public IActionResult SzukajWaluty(string q)
+        {
+            var waluty = _context.Waluty
+                .Where(w => w.Kod.Contains(q) || w.Nazwa.Contains(q))
+                .Select(w => new { w.Kod, w.Nazwa, w.Kraj })
+                .Take(10)
+                .ToList();
+            return Json(waluty);
+        }
+        public IActionResult NowyWidok()
+        {
+            return View();
+        }
+        
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
     }
 }

@@ -17,7 +17,6 @@ namespace ProjektWWW.NET_FR_LB.Data
         public DbSet<Rola> Rola { get; set; }
         public DbSet<Powiadomienie> Powiadomienia { get; set; }
 
-
         public DbSet<Komentarz> Komentarze { get; set; }
         public DbSet<UzytkownikRola> UzytkownikRole { get; set; }
 

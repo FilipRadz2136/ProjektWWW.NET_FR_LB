@@ -1,0 +1,8 @@
+C:\Users\filip\Desktop\ProjektWWW.NET_FR_LB\ProjektWWW.Tests\bin\Debug\net8.0\.msCoverageSourceRootsMapping_ProjektWWW.Tests
+C:\Users\filip\Desktop\ProjektWWW.NET_FR_LB\ProjektWWW.Tests\bin\Debug\net8.0\CoverletSourceRootsMapping_ProjektWWW.Tests
+C:\Users\filip\Desktop\ProjektWWW.NET_FR_LB\ProjektWWW.Tests\obj\Debug\net8.0\ProjektWWW.Tests.csproj.AssemblyReference.cache
+C:\Users\filip\Desktop\ProjektWWW.NET_FR_LB\ProjektWWW.Tests\obj\Debug\net8.0\ProjektWWW.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\filip\Desktop\ProjektWWW.NET_FR_LB\ProjektWWW.Tests\obj\Debug\net8.0\ProjektWWW.Tests.AssemblyInfoInputs.cache
+C:\Users\filip\Desktop\ProjektWWW.NET_FR_LB\ProjektWWW.Tests\obj\Debug\net8.0\ProjektWWW.Tests.AssemblyInfo.cs
+C:\Users\filip\Desktop\ProjektWWW.NET_FR_LB\ProjektWWW.Tests\obj\Debug\net8.0\ProjektWWW.Tests.csproj.CoreCompileInputs.cache
+C:\Users\filip\Desktop\ProjektWWW.NET_FR_LB\ProjektWWW.Tests\obj\Debug\net8.0\ProjektWWW.Tests.sourcelink.json

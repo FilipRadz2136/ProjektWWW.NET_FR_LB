@@ -1,0 +1,70 @@
+@{
+    ViewData["Title"] = "Wyszukiwarka walut";
+}
+<div class="container mt-4">
+    <input type="text" id="waluta-search" class="form-control form-control-lg" placeholder="Wpisz kod lub nazwę waluty..." autocomplete="off" />
+    <div id="suggestions" class="list-group position-absolute" style="z-index:10;"></div>
+    <div id="kurs-info" class="mt-4"></div>
+    <canvas id="wykresKursu" width="800" height="400" style="display:none"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+let chart = null;
+
+document.getElementById('waluta-search').addEventListener('input', function() {
+    const q = this.value;
+    if (q.length === 0) {
+        document.getElementById('suggestions').innerHTML = '';
+        return;
+    }
+    fetch('/Home/SzukajWaluty?q=' + encodeURIComponent(q))
+        .then(res => res.json())
+        .then(data => {
+            let html = '';
+            data.forEach(w => {
+                html += `<a href="#" class="list-group-item list-group-item-action" data-kod="${w.kod}">${w.kod} - ${w.nazwa} ${w.kraj}</a>`;
+            });
+            document.getElementById('suggestions').innerHTML = html;
+        });
+});
+
+document.getElementById('suggestions').addEventListener('click', function(e) {
+    if (e.target.dataset.kod) {
+        const kod = e.target.dataset.kod;
+        document.getElementById('waluta-search').value = kod;
+        this.innerHTML = '';
+        pokazKursIKres(kod);
+    }
+});
+
+function pokazKursIKres(kodWaluty) {
+    // Aktualny kurs
+    fetch(`/api/kurs?from=${kodWaluty}&to=PLN`)
+        .then(res => res.json())
+        .then(data => {
+            document.getElementById('kurs-info').innerHTML = `<h4>Aktualny kurs: 1 ${data.from} = ${data.kurs.toFixed(4)} PLN</h4>`;
+        });
+
+    // Wykres
+    fetch(`/Kursy/HistoriaKursu?kodWaluty=${kodWaluty}&dni=30`)
+        .then(res => res.json())
+        .then(data => {
+            document.getElementById('wykresKursu').style.display = '';
+            const ctx = document.getElementById('wykresKursu').getContext('2d');
+            if (chart) chart.destroy();
+            chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: data.labels,
+                    datasets: [{
+                        label: `Kurs ${kodWaluty}/PLN`,
+                        data: data.values,
+                        borderColor: 'blue',
+                        fill: false
+                    }]
+                }
+            });
+        });
+}
+</script>

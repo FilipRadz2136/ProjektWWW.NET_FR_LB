@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+iR/ZItR98z7D2nIuYOa6DPq8z2j1L2GjdyFvQUyhrI=",
+  "Hash": "2O1NK3DS3us0UnY/0ttXrHDdn2AuErYA9RreDgauHxY=",
   "Source": "ProjektWWW.NET_FR_LB",
   "BasePath": "_content/ProjektWWW.NET_FR_LB",
   "Mode": "Default",
@@ -1442,6 +1442,25 @@
       "OriginalItemSpec": "wwwroot\\uploads\\5e8cefc1-9145-4e1b-b9ef-29d206c60595.jpg"
     },
     {
+      "Identity": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\690a4111-5041-4cd4-a483-11e37bb66081.png",
+      "SourceId": "ProjektWWW.NET_FR_LB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\",
+      "BasePath": "_content/ProjektWWW.NET_FR_LB",
+      "RelativePath": "uploads/690a4111-5041-4cd4-a483-11e37bb66081.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\690a4111-5041-4cd4-a483-11e37bb66081.png"
+    },
+    {
       "Identity": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\74c984bc-1da8-40eb-a835-ae4a8c9cf71a.jpg",
       "SourceId": "ProjektWWW.NET_FR_LB",
       "SourceType": "Discovered",
@@ -1516,6 +1535,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\8cda7076-969e-4f79-a22b-20df2377e1a8.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\ab4fafae-2bc6-409f-ac15-ca5e7497e8a9.png",
+      "SourceId": "ProjektWWW.NET_FR_LB",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\",
+      "BasePath": "_content/ProjektWWW.NET_FR_LB",
+      "RelativePath": "uploads/ab4fafae-2bc6-409f-ac15-ca5e7497e8a9.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\ab4fafae-2bc6-409f-ac15-ca5e7497e8a9.png"
     },
     {
       "Identity": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB\\wwwroot\\uploads\\bg.png",

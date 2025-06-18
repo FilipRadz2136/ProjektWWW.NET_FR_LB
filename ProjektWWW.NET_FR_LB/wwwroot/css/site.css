@@ -20,3 +20,18 @@ html {
 body {
   margin-bottom: 60px;
 }
+body.dark-mode {
+    background-color: #181a1b !important;
+    color: #f1f1f1 !important;
+}
+body.dark-mode .card,
+body.dark-mode .navbar,
+body.dark-mode .footer,
+body.dark-mode .modal-content {
+    background-color: #23272b !important;
+    color: #f1f1f1 !important;
+}
+body.dark-mode .btn-primary {
+    background-color: #375a7f;
+    border-color: #375a7f;
+}

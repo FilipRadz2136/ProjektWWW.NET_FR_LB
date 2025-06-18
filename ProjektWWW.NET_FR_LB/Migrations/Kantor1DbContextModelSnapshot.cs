@@ -364,6 +364,27 @@ namespace ProjektWWW.NET_FR_LB.Migrations
                         });
                 });
 
+            modelBuilder.Entity("UlubionaWaluta", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("KodWaluty")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("UlubioneWaluty");
+                });
+
             modelBuilder.Entity("ProjektWWW.NET_FR_LB.Models.AlertKursu", b =>
                 {
                     b.HasOne("ProjektWWW.NET_FR_LB.Models.Uzytkownik", "Uzytkownik")

@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IEnumerable<ProjektWWW.NET_FR_LB.Models.Waluta>
+
+@{
     ViewData["Title"] = "Kalkulator walutowy";
     var waluty = ViewBag.Waluty as IEnumerable<ProjektWWW.NET_FR_LB.Models.Waluta>;
     string from = ViewBag.From;

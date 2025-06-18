@@ -4,7 +4,6 @@ using Xunit;
 using ProjektWWW.NET_FR_LB.Controllers;
 using ProjektWWW.NET_FR_LB.Data;
 using Microsoft.Extensions.Logging;
-using ProjektWWW.NET_FR_LB.Repositories;
 
 namespace ProjektWWW.Tests.Controllers
 {
@@ -26,7 +25,7 @@ namespace ProjektWWW.Tests.Controllers
         }
 
         [Fact]
-        public void Dodaj_ReturnsIActionResult()
+        public void Dodaj_ReturnsIActionResult_SecondInstance()
         {
             // Arrange
             var mockDb = new Mock<Kantor1DbContext>();

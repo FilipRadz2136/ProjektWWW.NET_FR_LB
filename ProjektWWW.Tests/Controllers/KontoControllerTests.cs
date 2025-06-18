@@ -11,7 +11,7 @@ namespace ProjektWWW.Tests.Controllers
     {
 
         [Fact]
-        public void Login_ReturnsIActionResult()
+        public void Login_ReturnsIActionResult_Second()
         {
             // Arrange
             var mockContext = new Mock<Kantor1DbContext>();
@@ -39,7 +39,7 @@ namespace ProjektWWW.Tests.Controllers
         }
 
         [Fact]
-        public void Register_ReturnsIActionResult()
+        public void Register_ReturnsIActionResult_Second()
         {
             // Arrange
             var mockContext = new Mock<Kantor1DbContext>();

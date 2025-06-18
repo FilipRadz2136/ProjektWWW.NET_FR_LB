@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2E4B6479-C7D8-4D57-8435-64D70B9E250B}|ProjektWWW.Tests\\ProjektWWW.Tests.csproj|c:\\users\\filip\\desktop\\projektwww.net_fr_lb\\projektwww.tests\\controllers\\komentarzecontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E4B6479-C7D8-4D57-8435-64D70B9E250B}|ProjektWWW.Tests\\ProjektWWW.Tests.csproj|solutionrelative:projektwww.tests\\controllers\\komentarzecontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E4B6479-C7D8-4D57-8435-64D70B9E250B}|ProjektWWW.Tests\\ProjektWWW.Tests.csproj|c:\\users\\filip\\desktop\\projektwww.net_fr_lb\\projektwww.tests\\controllers\\homecontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E4B6479-C7D8-4D57-8435-64D70B9E250B}|ProjektWWW.Tests\\ProjektWWW.Tests.csproj|solutionrelative:projektwww.tests\\controllers\\homecontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2E4B6479-C7D8-4D57-8435-64D70B9E250B}|ProjektWWW.Tests\\ProjektWWW.Tests.csproj|c:\\users\\filip\\desktop\\projektwww.net_fr_lb\\projektwww.tests\\controllers\\alertycontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E4B6479-C7D8-4D57-8435-64D70B9E250B}|ProjektWWW.Tests\\ProjektWWW.Tests.csproj|solutionrelative:projektwww.tests\\controllers\\alertycontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,20 +19,12 @@
       "RelativeMoniker": "D:0:0:{2E4B6479-C7D8-4D57-8435-64D70B9E250B}|ProjektWWW.Tests\\ProjektWWW.Tests.csproj|solutionrelative:projektwww.tests\\services\\currencyapiservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E4B6479-C7D8-4D57-8435-64D70B9E250B}|ProjektWWW.Tests\\ProjektWWW.Tests.csproj|c:\\users\\filip\\desktop\\projektwww.net_fr_lb\\projektwww.tests\\controllers\\komentarzecontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E4B6479-C7D8-4D57-8435-64D70B9E250B}|ProjektWWW.Tests\\ProjektWWW.Tests.csproj|solutionrelative:projektwww.tests\\controllers\\komentarzecontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2E4B6479-C7D8-4D57-8435-64D70B9E250B}|ProjektWWW.Tests\\ProjektWWW.Tests.csproj|c:\\users\\filip\\desktop\\projektwww.net_fr_lb\\projektwww.tests\\controllers\\kontocontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E4B6479-C7D8-4D57-8435-64D70B9E250B}|ProjektWWW.Tests\\ProjektWWW.Tests.csproj|solutionrelative:projektwww.tests\\controllers\\kontocontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2E4B6479-C7D8-4D57-8435-64D70B9E250B}|ProjektWWW.Tests\\ProjektWWW.Tests.csproj|c:\\users\\filip\\desktop\\projektwww.net_fr_lb\\projektwww.tests\\controllers\\powiadomieniacontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2E4B6479-C7D8-4D57-8435-64D70B9E250B}|ProjektWWW.Tests\\ProjektWWW.Tests.csproj|solutionrelative:projektwww.tests\\controllers\\powiadomieniacontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E4B6479-C7D8-4D57-8435-64D70B9E250B}|ProjektWWW.Tests\\ProjektWWW.Tests.csproj|c:\\users\\filip\\desktop\\projektwww.net_fr_lb\\projektwww.tests\\controllers\\homecontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E4B6479-C7D8-4D57-8435-64D70B9E250B}|ProjektWWW.Tests\\ProjektWWW.Tests.csproj|solutionrelative:projektwww.tests\\controllers\\homecontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{912FCC3C-B6F3-47A8-A630-7E88F123024D}|ProjektWWW.NET_FR_LB\\ProjektWWW.NET_FR_LB.csproj|c:\\users\\filip\\desktop\\projektwww.net_fr_lb\\projektwww.net_fr_lb\\services\\currencyapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -138,24 +138,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CurrencyApiServiceTests.cs",
-              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.Tests\\Services\\CurrencyApiServiceTests.cs",
-              "RelativeDocumentMoniker": "ProjektWWW.Tests\\Services\\CurrencyApiServiceTests.cs",
-              "ToolTip": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.Tests\\Services\\CurrencyApiServiceTests.cs",
-              "RelativeToolTip": "ProjektWWW.Tests\\Services\\CurrencyApiServiceTests.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAUwFMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T03:34:12.785Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "PowiadomieniaControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.Tests\\Controllers\\PowiadomieniaControllerTests.cs",
               "RelativeDocumentMoniker": "ProjektWWW.Tests\\Controllers\\PowiadomieniaControllerTests.cs",
@@ -167,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "KontoControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.Tests\\Controllers\\KontoControllerTests.cs",
               "RelativeDocumentMoniker": "ProjektWWW.Tests\\Controllers\\KontoControllerTests.cs",
@@ -179,32 +166,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "KomentarzeControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.Tests\\Controllers\\KomentarzeControllerTests.cs",
               "RelativeDocumentMoniker": "ProjektWWW.Tests\\Controllers\\KomentarzeControllerTests.cs",
               "ToolTip": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.Tests\\Controllers\\KomentarzeControllerTests.cs",
               "RelativeToolTip": "ProjektWWW.Tests\\Controllers\\KomentarzeControllerTests.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwCoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T03:30:08.829Z"
+              "WhenOpened": "2025-06-12T03:30:08.829Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "AlertyControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.Tests\\Controllers\\AlertyControllerTests.cs",
               "RelativeDocumentMoniker": "ProjektWWW.Tests\\Controllers\\AlertyControllerTests.cs",
               "ToolTip": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.Tests\\Controllers\\AlertyControllerTests.cs",
               "RelativeToolTip": "ProjektWWW.Tests\\Controllers\\AlertyControllerTests.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAQwBoAAAAAAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAkwBoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-12T03:30:00.02Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "HomeControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.Tests\\Controllers\\HomeControllerTests.cs",
               "RelativeDocumentMoniker": "ProjektWWW.Tests\\Controllers\\HomeControllerTests.cs",
@@ -212,7 +200,20 @@
               "RelativeToolTip": "ProjektWWW.Tests\\Controllers\\HomeControllerTests.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T03:26:31.133Z"
+              "WhenOpened": "2025-06-12T03:26:31.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CurrencyApiServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.Tests\\Services\\CurrencyApiServiceTests.cs",
+              "RelativeDocumentMoniker": "ProjektWWW.Tests\\Services\\CurrencyApiServiceTests.cs",
+              "ToolTip": "C:\\Users\\filip\\Desktop\\ProjektWWW.NET_FR_LB\\ProjektWWW.Tests\\Services\\CurrencyApiServiceTests.cs",
+              "RelativeToolTip": "ProjektWWW.Tests\\Services\\CurrencyApiServiceTests.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAUwFMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T03:34:12.785Z"
             },
             {
               "$type": "Document",

@@ -19,7 +19,7 @@ namespace ProjektWWW.Tests.Controllers
             var controller = new KomentarzeController(mockContext.Object, mockPowiadomienieRepo.Object);
 
             // Act
-            var result = controller.Dodaj();
+            var result = controller.Dodaj("test tresc", null);
 
             // Assert
             Assert.IsAssignableFrom<IActionResult>(result);
@@ -49,7 +49,7 @@ namespace ProjektWWW.Tests.Controllers
             var controller = new KomentarzeController(mockContext.Object, mockPowiadomienieRepo.Object);
 
             // Act
-            var result = controller.Usun();
+            var result = controller.Usun(1);
 
             // Assert
             Assert.IsAssignableFrom<IActionResult>(result);
